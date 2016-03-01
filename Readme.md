@@ -1,7 +1,7 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Лапшина](https://up.htmlacademy.ru/adaptive/6/user/35995).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Болтян` (https://htmlacademy.ru/profile/id83202).
 
 ---
 
