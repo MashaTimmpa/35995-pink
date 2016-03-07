@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-  	<div class="main-screen">
-      <div class="main-screen__wrapper">
-  	    <header class="page-header">
-  		  <h1 class="page-header__title">Pink</h1>
-  		  <nav class="page-header__nav"></nav>
-  	    </header>
-  	    <h2 class="main-screen__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-  	  </div>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <div class="main-screen">
+    <div class="main-screen__wrapper">
+      <header class="page-header">
+        <h1 class="page-header__title">Pink</h1>
+        <nav class="page-header__nav"></nav>
+      </header>
+      <h2 class="main-screen__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
+  </div>
 
-    <div class="text-block">
-	  <div class="text-block__wrapper">
-	    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
-	  </div>
-	</div>
+  <div class="text-block">
+    <div class="text-block__wrapper">
+      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+    </div>
+  </div>
 
-	<form class="competition-form">
-	  <fieldset class="participant-info">
-		<label class="participant-info__label" for="name">Имя</label>
-		<input type="text" id="name" name="name" class="participant-info__input" placeholder="Введите ваше имя" required>
-		<label class="participant-info__label" for="surname">Фамилия</label>
-		<input type="text" id="surname" name="surname" class="participant-info__input" placeholder="Укажите фамилию" required>
-		<label class="participant-info__label" for="patronimic">Отчество</label>
-		<input type="text" id="patronimic" name="patronimic" class="participant-info__input" placeholder="Ну и отчество тоже" required>
-	  </fieldset>
+  <form class="competition-form">
 
-	  <fieldset> class="achievments">
-		<label class="achievments__title">
-		  Ваши безбашенные достижения в путешествии
-		</label>
-		<input class="achievments__checkbox" id="checkbox-1" type="checkbox" checked>
-		<label class="achievments__label" for="checkbox-1">Сделал селфи с акулой</label>
-		<input class="achievments__checkbox" id="checkbox-2" type="checkbox" checked>
-		<label class="achievments__label" for="checkbox-2">Обгорел на пляже</label>
-		<input class="achievments__checkbox" id="checkbox-3" type="checkbox">
-		<label class="achievments__label" for="checkbox-3"Видел Чака Норриса</label>
-		<input class="achievments__checkbox" id="checkbox-4" type="checkbox" >
-		<label class="achievments__label" for="checkbox-4">Накупил сувениров</label>
-		<input class="achievments__checkbox" id="checkbox-5" type="checkbox" checked>
-		<label class="achievments__label" for="checkbox-5">Удержал башню</label>
-		<input class="achievments__checkbox" id="checkbox-5" id="checkbox-6" type="checkbox" >
-		<label class="achievments__label" for="checkbox-6">Разгромил отель</label>
-	  </fieldset>
+    <fieldset class="participant-info">
+      
+      <label class="participant-info__label" for="name">Имя</label>
+      <input type="text" id="name" name="name" class="participant-info__input" placeholder="Введите ваше имя" required>
+      
+      <label class="participant-info__label" for="surname">Фамилия</label>
+      <input type="text" id="surname" name="surname" class="participant-info__input" placeholder="Укажите фамилию" required>
 
-	  <fieldset class="participant-contacts">
-	  	<label for="phone" class="participant-contacts__label">Номерок телефончика</label> 
-	  	<input type="number" id="phone" name="phone" class="participant-contacts__input" placeholder="Номер, пожалуйста" required>
-	  	<label for="email" class="participant-contacts__label">адресок почты</label> 
-	  	<input type="number" id="email" name="email" class="participant-contacts__input" placeholder="E-mail, пожалуйста" required>
-	  </fieldset>
-	  <fieldset class="competitor-app">
-	  	<label class="competitor-app__title">
-	  	С каким приложением путешествовали?</label>
-	  	<input class="competitor-app__radio" id="radio-1" type="radio" checked>
-		<label class="competitor-app__label" for="radio-1">Pink для iOS</label>
-		<input class="competitor-app__radio" id="radio-2" type="radio" checked>
-		<label class="competitor-app__label" for="radio-2">Pink на Android</label>
-		<input class="competitor-app__radio" id="radio-3" type="radio" checked>
-		<label class="competitor-app__label" for="radio-3">Windows Phone</label>
-	  </fieldset>
-	  <fieldset class="competitor-emotions">
-	  	<label class="competitor-emotions__title">Опишите свои эмоции</label>
-	  	<input type="textarea" row="6" class="competitor-emotions__input">
-	  </fieldset>
-	  <input class="competition-form__submition" type="submit" value="Отправить форму" >
-	  <div class="competition-form__primechanie">
-	  	<sup>*</sup> — обязательные поля
-	  </div>
-	</form>
+      <label class="participant-info__label" for="patronimic">Отчество</label>
+      <input type="text" id="patronimic" name="patronimic" class="participant-info__input" placeholder="Ну и отчество тоже" required>
 
-		<footer class="page-footer">
-	  <div class="logo"><img src="" alt="">
-	  </div>
-	  <ul class="page-footer__social-buttons">
-	  	<li class="page-footer__social-button page-footer__social-button--twitter"></li>
-	  	<li class="page-footer__social-button page-footer__social-button--facebook"></li>
-	  	<li class="page-footer__social-button page-footer__social-button--vimeo"></li>
-	  </ul>
-	  <div class="page-footer__designe-by">
-	  	Разработано
-	  </div>
-	</footer>
-  </body>
+    </fieldset>
+
+    <fieldset class="achievments">
+
+      <label class="achievments__title">
+        Ваши безбашенные достижения в путешествии
+      </label>
+      <input class="achievments__checkbox" id="checkbox-1" type="checkbox" checked>
+      <label class="achievments__label" for="checkbox-1">Сделал селфи с акулой</label>
+
+      <input class="achievments__checkbox" id="checkbox-2" type="checkbox" checked>
+      <label class="achievments__label" for="checkbox-2">Обгорел на пляже</label>
+
+      <input class="achievments__checkbox" id="checkbox-3" type="checkbox">
+      <label class="achievments__label" for="checkbox-3"Видел Чака Норриса</label>
+
+      <input class="achievments__checkbox" id="checkbox-4" type="checkbox" >
+      <label class="achievments__label" for="checkbox-4">Накупил сувениров</label>
+
+      <input class="achievments__checkbox" id="checkbox-5" type="checkbox" checked>
+      <label class="achievments__label" for="checkbox-5">Удержал башню</label>
+
+      <input class="achievments__checkbox"  id="checkbox-6" type="checkbox" >
+      <label class="achievments__label" for="checkbox-6">Разгромил отель</label>
+   
+    </fieldset>
+
+    <fieldset class="participant-contacts">
+
+      <label for="phone" class="participant-contacts__label">Номерок телефончика</label> 
+      <input type="number" id="phone" name="phone" class="participant-contacts__input" placeholder="Номер, пожалуйста" required>
+
+      <label for="email" class="participant-contacts__label">адресок почты</label> 
+      <input type="number" id="email" name="email" class="participant-contacts__input" placeholder="E-mail, пожалуйста" required>
+    </fieldset>
+
+    <fieldset class="competitor-app">
+      <label class="competitor-app__title">
+        С каким приложением путешествовали?</label>
+
+      <input class="competitor-app__radio" id="radio-1" type="radio" checked>
+      <label class="competitor-app__label" for="radio-1">Pink для iOS</label>
+
+      <input class="competitor-app__radio" id="radio-2" type="radio" checked>
+      <label class="competitor-app__label" for="radio-2">Pink на Android</label>
+      
+      <input class="competitor-app__radio" id="radio-3" type="radio" checked>
+      <label class="competitor-app__label" for="radio-3">Windows Phone</label>
+    </fieldset>
+    
+    <fieldset class="competitor-emotions">
+      <label class="competitor-emotions__title">Опишите свои эмоции</label>
+      <input type="textarea" row="6" class="competitor-emotions__input">
+    </fieldset>
+    
+    <input class="competition-form__submition" type="submit" value="Отправить форму" >
+    <div class="competition-form__primechanie"><sup>*</sup> — обязательные поля</div>
+
+  </form>
+
+  <footer class="page-footer">
+    <div class="logo"><img src="" alt="">
+    </div>
+    <ul class="page-footer__social-buttons">
+      <li class="page-footer__social-button page-footer__social-button--twitter"></li>
+      <li class="page-footer__social-button page-footer__social-button--facebook"></li>
+      <li class="page-footer__social-button page-footer__social-button--vimeo"></li>
+    </ul>
+    <div class="page-footer__designe-by">
+      Разработано
+    </div>
+  </footer>
+</body>
 </html>

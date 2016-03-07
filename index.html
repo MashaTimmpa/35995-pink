@@ -1,125 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-    <div class="main-screen">
-      <div class="main-screen__wrapper">
-  	    <header class="page-header">
-  		  <h1 class="page-header__title">PINK</h1>
-  		  <nav class="page-header__nav"></nav>
-  	    </header>
-  	    <h2 class="main-screen__title">Взгляните на жизнь иначе!</h2>
-  	  </div>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <div class="main-screen">
+    <div class="main-screen__wrapper">
+      <header class="page-header">
+        <h1 class="page-header__title">PINK</h1>
+        <nav class="page-header__nav"></nav>
+      </header>
+      <h2 class="main-screen__title">Взгляните на жизнь иначе!</h2>
     </div>
-    <div class="download-panel">
-      <div class="download-panel__wrapper"> 
+  </div>
+
+  <div class="download-panel">
+    <div class="download-panel__wrapper"> 
       <ul class="download-panel__systems">
-      	<li class="download-panel__system download-panel__system--apple"></li>
-      	<li class="download-panel__system download-panel__system--android"></li>
-      	<li class="download-panel__system download-panel__system--win"></li>
+        <li class="download-panel__system download-panel__system--apple"></li>
+        <li class="download-panel__system download-panel__system--android"></li>
+        <li class="download-panel__system download-panel__system--win"></li>
       </ul>
       <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
     </div>
-    <div class="advantages">
-      <div "advantages__descript">
-        <p>Устали от серости мегаполиса?</p>
-    	<p>Нам есть, что вам 
-		предложить!</p>
-      </div>
-      <ul class="advantages__list">
-      	<li class="advantages__item">
-  		  <h3 class="advantages__name">Поднимает настроение</h3>
-  		  <p class="advantages__text">
-  		  Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-  		  </p>
-      	</li>
-        <li class="advantages__item">
-  		  <h3 class="advantages__name">Меняет мир вокруг</h3>
-  		  <p class="advantages__text">
-  		  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-  		  </p>
-      	</li>
-      	<li class="advantages__item">
-  		  <h3 class="advantages__name">Заводит новых друзей</h3>
-  		  <p class="advantages__text">
-  		  Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-  		  </p>
-      	</li>
-      </ul>
-      <div class="smile-phone">
-      	<p>Всем привет!</p>
-      </div>
+  </div>
+ 
+  <div class="advantages">
+    <div "advantages__descript">
+      <p>Устали от серости мегаполиса?</p>
+      <p>Нам есть, что вам 
+     предложить!</p>
     </div>
-    <div class="reviews">
-      <div class="reviews__wrapper">
-        <div class="review-item">
-          <h4 class="review-item__name">Николай Петров</h4>
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <!--Как оформлять остальные отзывы? тоже их прописывать, но в дальнейшем скрывать?-->
-        <div class="reviews__pagination">
-        </div>
-      </div>
-    </div>
-
-    <div class="products">
-    <!--А как здесь добиться такого єффекта, что другие продукті слева и справа залезают на основной? эта каруселька будет на js или на css? или єто лучше таблицей разбить?-->
-      <div class="product">
-    	<header class="product__header">
-    	  <h2 class="product__name">Стандарт</h2>
-    	  <span class="product__price">3.99 USD</span>
-    	</header>
-    	  <ul>
-	 	    <li class="product__item product__item--enable">Розовый фильтр</li>
-	 	    <li  class="product__item product__item--enable">Смайлики</li>
-	 	    <li  class="product__item  product__item--disable">Комментарии</li>
-	      </ul>
-      </div>
-    </div>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <div class="advantages__name">Поднимает настроение</div>
+        <p class="advantages__text">
+        Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__name">Меняет мир вокруг</div>
+        <p class="advantages__text">
+          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__name">Заводит новых друзей</div>
+        <p class="advantages__text">
+          Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+        </p>
+       </li>
+    </ul>
   
-    <div class="contacts">
-      <div class="contacts__wrapper">
-        <div class="contacts__title">
-        Остались вопросы?<br> 
-        Свяжитесь с нами!
-        </div>
-        <div class="contact">
-          <span class="contact__name">
-            Звоните:
-          </span>
-          <tel class="contact__value">
-          	+7 (812) 555-66-66
-          </tel>
-        </div>
-        <div class="contact">
-          <span class="contact__name">
-            Пишите:
-          </span>
-          <mail class="contact__value">
-          	mail@htmlacademy.ru
-          </mail>
-        </div>
-        <div class="contact">
-          <span class="contact__name">
-            Приезжайте в гости:
-          </span>
-          <span class="contact__value">
-			ул. Большая <br>
-			Конюшенная, 19/8
-          </span>
-        </div>
+  <div class="smile-phone">
+    <p>Всем привет!</p>
+  </div>
+</div>
+
+<div class="reviews">
+  <div class="reviews__wrapper">
+    <div class="review-item">
+      <div class="review-item__name">Николай Петров</div>
+      <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+    </div>
+    <div class="reviews__pagination">
+    </div>
+  </div>
+</div>
+
+<div class="products">
+<!--А как здесь добиться такого єффекта, что другие продукті слева и справа залезают на основной? эта каруселька будет на js или на css? или єто лучше таблицей разбить? -- Здесь верстают таблицу-->
+  <div class="product">
+    <header class="product__header">
+      <div class="product__name">Стандарт</div>
+      <span class="product__price">3.99 USD</span>
+    </header>
+    <ul>
+      <li class="product__item product__item--enable">Розовый фильтр</li>
+      <li  class="product__item product__item--enable">Смайлики</li>
+      <li  class="product__item  product__item--disable">Комментарии</li>
+    </ul>
+  </div>
+</div>
+
+<div class="contacts">
+  <div class="contacts__wrapper">
+    <div class="contacts__title">
+     Остались вопросы?<br> 
+     Свяжитесь с нами!
+    </div>
+    <div class="contact">
+      <span class="contact__name">
+        Звоните:
+      </span>
+      <tel class="contact__value">
+        +7 (812) 555-66-66
+      </tel>
+    </div>
+    <div class="contact">
+      <span class="contact__name">
+        Пишите:
+      </span>
+      <mail class="contact__value">
+        mail@htmlacademy.ru
+      </mail>
       </div>
+    <div class="contact">
+      <span class="contact__name">
+        Приезжайте в гости:
+      </span>
+      <span class="contact__value">
+        ул. Большая <br>
+        Конюшенная, 19/8
+       </span>
     </div>
+  </div>
+</div>
 
-    <div class="footer-map">
-      
-    </div>
-	
-	
+<div class="footer-map">
 
-  </body>
+</div>
+
+
+
+</body>
 </html>
