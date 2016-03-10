@@ -3,209 +3,178 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="main-screen">
       <div class="main-screen__wrapper">
-  	    <header class="page-header">
-  		  <h1 class="page-header__title">Pink</h1>
-  		  <nav class="page-header__nav"></nav>
-  	    </header>
-  	    <h2 class="main-screen__title">Фотографии пользователей<h2>
-  	  </div>
+        <header class="page-header">
+          <h1 class="page-header__title">Pink</h1>
+          <nav class="page-header__nav"></nav>
+        </header>
+        <h2 class="main-screen__title">Фотографии пользователей</h2>
+      </div>
     </div>
     <div class="text-block">
-	  <div class="text-block__wrapper">
-	    <p>Взгляните на фотографии, которые выкладывают пользователи!
-		Видите, как не хватает ваших?</p>
-	  </div>
-	</div>
-	<div class="photo-galery">
-		<!--Ещё вопрос: как правильно и красиво решить вопрос с контейнеро-ограничителем для фотографий галереи? ставить на всю галерею - тогда панорама дня не будет помещаться... после панорамы все законтейнерить? или каждой отдельно? спс-->
-	 <div class="photo-of-day"> <!--Здесь фото задаётся фоном по моему, верно?-->
-	  <div class="photo-of-day__wrapper"> 
-	    <div class="photo-of-day__title">
-	  		Панорама дня
-	  	</div>
-	  	<div class="post">
-	  	  <div class="post__header">
-	  	    <div class="post__author">Анна</div>
-	  	    <div class="post__time-publicated">(5 минут назад)</div>
-	  	  </div>
-	  	  <p class="post__text">
-		  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-		  <div class="post__likes">
-		  <img src="" alt="heart">
-		    <div class="post__num-likes">Нравится: 215 </div>
-			</div>
-	  	</div>
-	   </div>
-	  </div>
-
-	  <!--Хочу сохранить отдельный блок для поста (название, автор, текст, лайки), но отделить блок для обычных фото и для фото дня. правильным ли способом я это делаю? или не морочиться и сделать два блока, включив в него по сути дублирующиеся элементы поста (название, текст, лайки)?-->
-	<div class="photo"> 
-	  <div class="photo__wrapper">
-	  	<img src="http://placehold.it/280x180">
-	  	<div class="post">
-	  	  <div clas="post__header">
-	        <div class="post__author">Левон</div>
-	  	    <div class="post__time-publicated">(5 часов назад)</div>
-	  	   </div>
-	  	   <p class="post__text">
-		   Вчера он на луну летал, сегодня в руки к нам попал.</p>
-		   <div class="post__likes">
-		    <img src="" alt="heart.jpg">
-		    <div class="post__num-likes">Нравится: 356 </div>
-		  </div>
-	  	</div>
-	  </div>
-	</div>
-	
-	
-  	<div class="photo"> 
-	  <div class="photo__wrapper">
-	   <img src="http://placehold.it/280x180">
-	  	<div class="post">
-	  	  <div clas="post__header">
-	  	    <div class="post__author">Антон </div>
-	  		<div class="post__time-publicated">(12 часов назад)</div>
-	  	  </div>
-	  	  <p class="post__text">
-		   Соседи будут рады!.</p>
-		  <div class="post__likes">
-		    <img src="" alt="heart.jpg">
-		    <div class="post__num-likes">Нравится: 666 </div>
-		  </div>
-	  	</div>
-	  </div>
-	</div>
-
-	<div class="photo"> 
-	  <div class="photo__wrapper">
-	  	<img src="http://placehold.it/280x180">
-	  	<div class="post">
-	      <div clas="post__header">
-	        <div class="post__author">Борис</div>
-	  	    <div class="post__time-publicated">
-	  		 (20 часов назад)</div>
-	  	  </div>
-	  	  <p class="post__text">
-		  Здесь могла быть ваша цитата о высоком и вечном.</p>
-		  <div class="post__likes">
-			<img src="" alt="heart.jpg">
-			<div class="post__num-likes">Нравится: 215 </div>
-		  </div>
-	  	</div>
-	  </div>
-	</div>
-
-	<div class="photo"> 
-	  <div class="photo__wrapper">
-	  	<img src="http://placehold.it/280x180">
-	  	<div class="post">
-	  	  <div clas="post__header">
-	        <div class="post__author">Сергей </div>
-	  	    <div class="post__time-publicated">
-	  		(25 часов назад)</div>
-	  	  </div>
-	  	  <p class="post__text">
-		  Самая кубанская в мире!</p>
-		  <div class="post__likes">
-			<img src="" alt="heart.jpg">
-			<div class="post__num-likes">Нравится: 4 </div>
-		  </div>
-	  	</div>
-	  </div>
-	</div>
-	<div class="photo"> 
-	  <div class="photo__wrapper">
-	  	<img src="http://placehold.it/280x180">
-	  	<div class="post">
-	  	  <div clas="post__header">
-	        <div class="post__author">Максим</div>
-	  	    <div class="post__time-publicated">
-	  		(40 часов назад)</div>
-	  	  </div>
-	  	  <p class="post__text">
-		  Где снег-то?</p>
-		  <div class="post__likes">
-			<img src="" alt="heart.jpg">
-			<div class="post__num-likes">Нравится: 150 </div>
-		  </div>
-	  	</div>
-	  </div>
-	</div>
-	
-	<div class="photo"> 
-	  <div class="photo__wrapper">
-	  	<img src="http://placehold.it/280x180">
-	  	<div class="post">
-	  	  <div clas="post__header">
-	        <div class="post__author">Надежда</div>
-	  	    <div class="post__time-publicated">
-	  		(45 часов назад)</div>
-	  	  </div>
-	  	  <p class="post__text">
-		  Всем GM и взаимные лайки!</p>
-		  <div class="post__likes">
-			<img src="" alt="heart.jpg">
-			<div class="post__num-likes">Нравится: 250 </div>
-		  </div>
-	  	</div>
-	  </div>
-	</div>
-	</div>
-	<div class="text-block">
-	  <div class="text-block__wrapper">
-	    <p> Затмите их всех!</br>
-	    Выкладывайте все, что накопилось в телефоне!</p>
-	  </div>
-	</div>
-	<div class="user-panel">
-	  <div class="user-panel__wrapper">
-	    <img src="" alt="">
-	    <div  class="user-panel__edit">
-	      <ul >
-	    	<li class="user-panel__instument user-panel__instument--size">
-	    	  <label for name="size"><img src="" alt="size"></label>
-	    	</li>
-	    	<li class="user-panel__instument user-panel__instument--color">
-	    	  <label for name="size"><img src="" alt="color"></label>
-	    	</li>
-	    	<li class="user-panel__instument user-panel__instument--bright">
-	    	  <label for name="size"><img src="" alt="color"></label>
-	    	</li>
-	      </ul>
-	      <input type="range" name="size">
-	      <input type="range" name="color">
-	      <input type="range" name="bright">
-	    </div>
-	    <!--делать ли отдельній блок для кнопок?-->
-	    <div class="user-panel__button user-panel__button--accept">Запостить</div>
-	    <div class="user-panel__button user-panel__button--decline">Отменить</div>
-	  </div>
-	</div>
-	<footer class="page-footer">
-	  <div class="logo"><img src="" alt="">
-	  </div>
-	  <ul class="page-footer__social-buttons">
-	  	<li class="page-footer__social-button page-footer__social-button--twitter"></li>
-	  	<li class="page-footer__social-button page-footer__social-button--facebook"></li>
-	  	<li class="page-footer__social-button page-footer__social-button--vimeo"></li>
-	  </ul>
-	  <div class="page-footer__designe-by">
-	  	Разработано
-	  </div>
-	</footer>
- 
-	
-
-
-
-
-
-
-   
-
+      <div class="text-block__wrapper">
+        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+    </div>
+    <div class="photo-galery">
+      <div class="post post--of-the-day">
+        <img class="post__photo post__photo--of-the-day"  src="http://placehold.it/280x180">
+        <div class="post__wrapper">
+          <div class="post__header">
+            <div class="post__author">Анна</div>
+            <div class="post__time-publicated">(5 минут назад)</div>
+          </div>
+          <p class="post__text">
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+          <div class="post__likes">
+            <img src="" alt="heart">
+            <div class="post__num-likes">Нравится: 215 </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/280x180">
+          <div clas="post__header">
+            <div class="post__author">Левон</div>
+            <div class="post__time-publicated">(5 часов назад)</div>
+          </div>
+          <p class="post__text">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <div class="post__likes">
+            <img src="" alt="heart.jpg">
+            <div class="post__num-likes">Нравится: 356 </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/280x180">
+          <div clas="post__header">
+            <div class="post__author">Антон </div>
+            <div class="post__time-publicated">(12 часов назад)</div>
+          </div>
+          <p class="post__text">
+            Соседи будут рады!.
+          </p>
+          <div class="post__likes">
+            <img src="" alt="heart.jpg">
+            <div class="post__num-likes">Нравится: 666 </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/280x180">
+          <div clas="post__header">
+            <div class="post__author">Борис</div>
+            <div class="post__time-publicated">
+              (20 часов назад)
+            </div>
+          </div>
+          <p class="post__text">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <div class="post__likes">
+            <img src="" alt="heart.jpg">
+            <div class="post__num-likes">Нравится: 215 </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/280x180">
+          <div clas="post__header">
+            <div class="post__author">Сергей </div>
+            <div class="post__time-publicated">
+              (25 часов назад)</div>
+          </div>
+          <p class="post__text">
+            Самая кубанская в мире!</p>
+          <div class="post__likes">
+            <img src="" alt="heart.jpg">
+            <div class="post__num-likes">Нравится: 4 </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/280x180">
+          <div clas="post__header">
+            <div class="post__author">Максим</div>
+            <div class="post__time-publicated">
+              (40 часов назад)</div>
+          </div>
+          <p class="post__text">
+          Где снег-то?</p>
+          <div class="post__likes">
+           <img src="" alt="heart.jpg">
+           <div class="post__num-likes">Нравится: 150 </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post__wrapper">
+          <img class="post__photo" src="http://placehold.it/280x180">
+          <div clas="post__header">
+            <div class="post__author">Надежда</div>
+            <div class="post__time-publicated">
+            (45 часов назад)</div>
+          </div>
+          <p class="post__text">
+          Всем GM и взаимные лайки!</p>
+          <div class="post__likes">
+            <img src="" alt="heart.jpg">
+            <div class="post__num-likes">Нравится: 250 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-block">
+      <div class="text-block__wrapper">
+        <p> Затмите их всех!</br>
+        Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+    </div>
+    <div class="user-panel">
+      <div class="user-panel__wrapper">
+        <img src="" alt="">
+        <div  class="user-panel__edit">
+          <ul >
+            <li class="user-panel__instument user-panel__instument--size">
+              <label for name="size"><img src="" alt="size"></label>
+            </li>
+            <li class="user-panel__instument user-panel__instument--color">
+              <label for name="size"><img src="" alt="color"></label>
+            </li>
+            <li class="user-panel__instument user-panel__instument--bright">
+              <label for name="size"><img src="" alt="color"></label>
+            </li>
+          </ul>
+          <input type="range" name="size">
+          <input type="range" name="color">
+          <input type="range" name="bright">
+        </div>
+        <!--делать ли отдельній блок для кнопок?-->
+        <div class="user-panel__button user-panel__button--accept">Запостить</div>
+        <div class="user-panel__button user-panel__button--decline">Отменить</div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="logo"><img src="" alt=""></div>
+      <ul class="page-footer__social-buttons">
+        <li class="page-footer__social-button page-footer__social-button--twitter"></li>
+        <li class="page-footer__social-button page-footer__social-button--facebook"></li>
+        <li class="page-footer__social-button page-footer__social-button--vimeo"></li>
+      </ul>
+      <div class="page-footer__designe-by">
+        Разработано
+      </div>
+    </footer>
   </body>
 </html>
