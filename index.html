@@ -6,84 +6,139 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="main-screen">
-    <div class="main-screen__wrapper">
-      <header class="page-header">
-        <h1 class="page-header__title">PINK</h1>
-        <nav class="page-header__nav"></nav>
-      </header>
-      <h2 class="main-screen__title">Взгляните на жизнь иначе!</h2>
+  <section class="main-index">
+   <header class="main-index__header">
+     <div class="container">
+       <h1 class="main-nav__name">PINK</h1>
+       <nav class="main-nav">
+          <ul class="main-nav__items">
+           <li class="main-nav__item">Информация</li>
+           <li class="main-nav__item">Возможности</li>
+           <li class="main-nav__item">Отзывы</li>
+           <li class="main-nav__item">Стоимость</li>
+         </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container descript__picture-phone ">
+      <div class="descript">
+        <h2>Взгляните на жизнь иначе!</h2>
+      </div>
+
+ <!--    <div class="descript__picture-phone container">     </div>
+ -->
+    <div class="download-panel">
+      <div class="dowload-panel__button">Скачать приложение</div>
+        <ul class="download-panel__systems">
+          <li class="download-panel__system download-panel__system--apple"><img src="img/logo-android.svg"></li>
+          <li class="download-panel__system download-panel__system--android"><img src="img/logo-apple.svg"></li>
+          <li class="download-panel__system download-panel__system--win"><img src="img/logo-microsoft.svg"></li>
+        </ul>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
-  </div>
-  <div class="download-panel">
-    <div class="download-panel__wrapper">
-      <ul class="download-panel__systems">
-        <li class="download-panel__system download-panel__system--apple"></li>
-        <li class="download-panel__system download-panel__system--android"></li>
-        <li class="download-panel__system download-panel__system--win"></li>
-      </ul>
-      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
-  </div>
-  <div class="advantages">
+  </section>
+
+  <div class="avdantages">
     <div "advantages__descript">
       <p>Устали от серости мегаполиса?</p>
       <p>Нам есть, что вам предложить!</p>
     </div>
-    <ul class="advantages__list">
-      <li class="advantages__item">
-        <div class="advantages__name">Поднимает настроение</div>
-        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-      </li>
-      <li class="advantages__item">
-        <div class="advantages__name">Меняет мир вокруг</div>
-        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </li>
-      <li class="advantages__item">
-        <div class="advantages__name">Заводит новых друзей</div>
-        <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-       </li>
-    </ul>
-   <div class="smile-phone">
-    <p>Всем привет!</p>
+    <div class="advantages__table">
+      <ul class="advantages__picture-list">
+        <li><div class="advantages__picture advantages__picture--1"> </div></li>
+        <li><div class="advantages__picture advantages__picture--2"></div></li>
+        <li><div class="advantages__picture advantages__picture--3"></div></li>
+      </ul>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__name">Поднимает настроение</div>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__name">Меняет мир вокруг</div>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__name">Заводит новых друзей</div>
+          <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+         </li>
+       </ul>
+     </div>
+</div>
+
+<div class="effect container">
+  <div class="effect__sign">
+      <img src="">
+  </div>
+  <div class="effect__text clearfix">
+    <h3>Эффект на 24 часа!</h3>
+    <p class="effect__paragraph">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+    <p class="effect__paragraph 24-hours-effect__paragraph--small">Узнать больше об исследовании</p>
   </div>
 </div>
+
 <div class="reviews">
-  <div class="reviews__wrapper">
+  <div class="container">
     <div class="review-item">
       <div class="review-item__name">Николай Петров</div>
-      <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <p class="review-item__text container" >«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
     </div>
     <div class="reviews__pagination">
     </div>
   </div>
 </div>
-<div class="products">
-<!--А как здесь добиться такого єффекта, что другие продукті слева и справа залезают на основной? эта каруселька будет на js или на css? или єто лучше таблицей разбить? -- Здесь верстают таблицу-->
-  <div class="product">
-    <header class="product__header">
-      <div class="product__name">Стандарт</div>
-      <span class="product__price">3.99 USD</span>
-    </header>
-    <ul>
+<div class="product container">
+<!--Здесь верстают таблицу-->
+    <ul class="product__items product__items--header">
+     <li class="product__item"></li>
+      <li class="product__item">
+        <div class="product__item-title product__item-title--name">Стандарт</div>
+        <span class="product__item-title product__item-title--price">3.99 USD</span>
+      </li>
+      <li class="product__item">
+        <div class="product__item-title product__item-title--name">База</div>
+        <span class="product__item-title product__item-title--price">3.99 USD</span>
+      </li>
+      <li class="product__item">
+        <div class="product__item-title product__item-title--name">Анлим</div>
+        <span class="product__item-title product__item-title--price">3.99 USD</span>
+      </li>
+    </ul>
+    <ul class="product__items product__items--title">
       <li class="product__item product__item--enable">Розовый фильтр</li>
-      <li  class="product__item product__item--enable">Смайлики</li>
-      <li  class="product__item  product__item--disable">Комментарии</li>
+      <li  class="product__item product__item--enable"><p class="text-mobile">Розовый фильтр</p></li>
+      <li  class="product__item  product__item--disable"><p class="text-mobile">Розовый фильтр</p></li>
+      <li  class="product__item  product__item--disable"><p class="text-mobile">Розовый фильтр</p></li>
+    </ul>
+    <ul class="product__items product__items--standart">
+      <li class="product__item product__item--enable">Смайлики</li>
+      <li  class="product__item product__item--enable"><p class="text-mobile">Смайлики</p></li>
+      <li  class="product__item  product__item--disable"><p class="text-mobile">Смайлики</p></li>
+       <li  class="product__item  product__item--disable"><p class="text-mobile">Смайлики</p></li>
+    </ul>
+     <ul class="product__items product__items--base">
+      <li class="product__item product__item--enable">Комментарии</li>
+      <li  class="product__item product__item--enable"><p class="text-mobile">Комментарии</p></li>
+      <li  class="product__item  product__item--disable"><p class="text-mobile">Комментарии</p></li>
+      <li  class="product__item  product__item--disable"><p class="text-mobile">Комментарии</p></li>
     </ul>
   </div>
 </div>
+
 <div class="contacts">
-  <div class="contacts__wrapper">
+  <div class="contacts__wrapper container">
     <div class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</div>
-    <div class="contact">
+    <div class="contact contact--tel">
       <span class="contact__name">Звоните:</span>
       <tel class="contact__value">+7 (812) 555-66-66</tel>
     </div>
-    <div class="contact">
+    <div class="contact contact--mail">
       <span class="contact__name">Пишите:</span>
       <mail class="contact__value">mail@htmlacademy.ru</mail>
       </div>
-    <div class="contact">
+    <div class="contact contact--adress">
       <span class="contact__name">Приезжайте в гости:</span>
       <span class="contact__value">
         ул. Большая <br>Конюшенная, 19/8</span>

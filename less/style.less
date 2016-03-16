@@ -1,17 +1,59 @@
 @import "main-screen.less";
-@import "page-header.less";
+@import "main-index.less";
+@import "main-nav.less";
 @import "download-panel.less";
+@import "advantages.less";
+@import "effect.less";
 @import "reviews.less";
-@import "products.less";
 @import "product.less";
 @import "contacts.less";
 @import "contact.less";
 @import "text-block.less";
 @import "competition-form.less";
-@import "page-footer.less";
+@impot "page-footer.less";
 @import "post.less";
 @import "photo-galery.less";
 @import "user-panel.less";
 
 
-body { background: salmon; }
+@mobile-widths-only: ~"(max-width: 767px)";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1200px)";
+@bg-color: #1d2631;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: @bg-color;
+  color: white;
+  .clearfix;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 640px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
+
+}
