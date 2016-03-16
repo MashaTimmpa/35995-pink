@@ -1,5 +1,59 @@
 .user-panel {
-	border: 2px solid #CD5C5C;
+	outline: 2px solid #CD5C5C;
+}
+
+.user-panel__instrument-list {
+	list-style: none;
+	.clearfix;
+}
+
+.user-panel__instument/*,
+ .user-panel__instument label*/{
+	float: left;
+	margin: 5px;
+}
+
+.user-panel__instument:nth-of-type(2) label {
+	margin-left: -100px;
 
 }
 
+.user-panel__instument:nth-of-type(n+2) input {
+	display: none;
+}
+
+  @media @tablet-widths {
+  	.user-panel {
+  		.clearfix;
+  	}
+
+.user-panel__instument:nth-of-type(n+2) input {
+	display: table-cell;
+}
+
+.user-panel__img,
+.user-panel__edit {
+	width: 47.5%;
+}
+
+.user-panel__img {float: left;}
+
+.user-panel__edit {float: right;}
+
+.user-panel__instument {
+	float: none;
+	margin: 20px;
+}
+.user-panel__instrument-list {
+	display: table;
+}
+
+.user-panel__instument {
+	display: table-row;
+}
+
+.user-panel__instument li {
+	display: table-cell;
+}
+
+  }

@@ -6,15 +6,25 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="main-screen">
-      <div class="main-screen__wrapper">
-        <header class="page-header">
-          <h1 class="page-header__title">Pink</h1>
-          <nav class="page-header__nav"></nav>
-        </header>
-        <h2 class="main-screen__title">Фотографии пользователей</h2>
+    <div class="main-index">
+      <header class="main-index__header">
+     <div class="container">
+       <h1 class="main-nav__name">PINK</h1>
+          <nav class="main-nav">
+          <ul class="main-nav__items">
+           <li class="main-nav__item">Информация</li>
+           <li class="main-nav__item">Возможности</li>
+           <li class="main-nav__item">Отзывы</li>
+           <li class="main-nav__item">Стоимость</li>
+         </ul>
+        </nav>
+      </div>
+    </header>
+      <div class="main-index__title main-index__title--photo container">
+        <h2 >Фотографии пользователей</h2>
       </div>
     </div>
+
     <div class="text-block">
       <div class="text-block__wrapper">
         <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -142,23 +152,28 @@
       </div>
     </div>
     <div class="user-panel">
-      <div class="user-panel__wrapper">
-        <img src="" alt="">
+      <div class="user-panel__wrapper container">
+        <img class="user-panel__img" src="img/photo-7-mobile.jpg" alt="">
         <div  class="user-panel__edit">
-          <ul >
+          <ul class="user-panel__instrument-list">
             <li class="user-panel__instument user-panel__instument--size">
-              <label for name="size"><img src="" alt="size"></label>
+              <label for name="size"><img src="" alt="size"></label><br>
+              <input type="range" name="size">
             </li>
             <li class="user-panel__instument user-panel__instument--color">
               <label for name="size"><img src="" alt="color"></label>
+              <input type="range" name="color">
             </li>
             <li class="user-panel__instument user-panel__instument--bright">
               <label for name="size"><img src="" alt="color"></label>
+              <input type="range" name="bright">
             </li>
           </ul>
-          <input type="range" name="size">
-          <input type="range" name="color">
-          <input type="range" name="bright">
+      <!--     <ul class="user-panel__inputs">
+              <li><input type="range" name="size"></li>
+              <li><input type="range" name="color"></li>
+              <li><input type="range" name="bright"></li>
+          </ul> -->
         </div>
         <!--делать ли отдельній блок для кнопок?-->
         <div class="user-panel__button user-panel__button--accept">Запостить</div>
@@ -166,12 +181,14 @@
       </div>
     </div>
     <footer class="page-footer">
-      <div class="logo"><img src="" alt=""></div>
-      <ul class="page-footer__social-buttons">
-        <li class="page-footer__social-button page-footer__social-button--twitter"></li>
-        <li class="page-footer__social-button page-footer__social-button--facebook"></li>
-        <li class="page-footer__social-button page-footer__social-button--vimeo"></li>
-      </ul>
+      <div class="page-footer__logo"><img src="" alt="">PINK</div>
+      <div class="page-footer__social-buttonons">
+        <ul class="page-footer__social-buttons-list">
+          <li class="page-footer__social-button page-footer__social-button--twitter">twitter</li>
+          <li class="page-footer__social-button page-footer__social-button--facebook">facebook</li>
+          <li class="page-footer__social-button page-footer__social-button--vimeo">vimeo</li>
+        </ul>
+      </div>
       <div class="page-footer__designe-by">
         Разработано
       </div>
