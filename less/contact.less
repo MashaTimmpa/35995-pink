@@ -1,3 +1,32 @@
 .contact {
+	display: block;
 	border: 1px dotted #FFC0CB;
+	.clearfix;
 }
+
+ @media @tablet-widths {
+ 	.contact--tel,
+ 	.contact--mail  {
+ 		width: 50%;
+ 	}
+ 	.contact--tel {
+ 		float: left;
+ 	}
+
+ 		.contact--mail {
+ 			float: right;
+ 		}
+
+ 	.contact--adress {
+ 		float: left;
+ 		width: 100%;
+ 	}
+ }
+
+ @media @desktop-widths {
+ 	.contact--adress,
+ 	.contact--tel,
+ 	.contact--mail {
+ 		width: 30%
+ 	}
+ }

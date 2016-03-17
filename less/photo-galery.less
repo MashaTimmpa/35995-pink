@@ -1,5 +1,28 @@
 .photo-galery {
-	border: 4px dashed #FFC0CB;
-
+	.container;
+	outline: 4px dashed #FFC0CB;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
+
+.post.post--of-the-day {
+	width: 100%;
+	flex-grow:2;
+}
+
+
+ @media @tablet-widths {
+ 		.post {
+ 			width: 47%;
+ 		}
+
+ }
+
+  @media @desktop-widths {
+ 		.post {
+ 			width: 31%;
+ 		}
+
+ }

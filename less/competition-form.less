@@ -1,8 +1,110 @@
 .competition-form {
-	border: 3px solid #A52A2A;
+	outline: 3px solid #A52A2A;
+	outline: table;
+	.container;
 }
 
 .competition-form__fieldset {
-	border: 2px dotted #FFC0CB;
+	outline: 2px dotted #FFC0CB;
 }
 
+.competition-form__fieldset ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+ @media @tablet-widths {
+
+.competition-form__fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+
+.competition-form__fieldset ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+
+
+.competition-form__fieldset--participant-info li
+ {
+	width: 47%;
+		}
+}
+
+@media @tablet-widths {
+		.competition-form {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+}
+
+		.competition-form__fieldset--achievments {
+		display: flex;
+		flex-wrap: wrap;
+}
+
+		.competition-form__fieldset--achievments ul {
+			display: flex;
+			flex-wrap: wrap;
+			/*margin: 20px;*/
+		}
+
+		.competition-form__fieldset--achievments li {
+			flex-basis: 30%;
+		}
+
+		.competition-form__fieldset--participant-info {
+			order: 0;
+			width: 100%;
+		}
+		.competition-form__fieldset--app {
+			order: 1;
+			width: 100%;
+		}
+
+		.competition-form__fieldset--participant-contacts {
+			order: 2;
+			width: 100%;
+
+		}
+
+		.competition-form__fieldset--achievments {
+			order: 3;
+			width: 100%;
+
+		}
+
+		.competition-form__fieldset--emotions {
+			order: 4;
+			width: 100%;
+
+		}
+
+		.competition-form__submition {
+			order: 5;
+		width: 100%;}
+
+		.competition-form__primechanie {
+			order: 6;
+			width: 100%;
+		}
+}
+
+@media @desktop-widths {
+		.competition-form__fieldset--participant-info {
+				width: 47.0%;
+
+		}
+
+		.competition-form__fieldset--app {
+				width: 47.0%;
+		}
+}

@@ -1,0 +1,35 @@
+	.effect {
+	display: none;
+	}
+
+	@media @tablet-widths {
+	.effect {
+		display: block;
+		outline: 2px solid salmon;
+		.clearfix;
+		height: 100px;
+}
+	.effect__sign {
+	.clearfix;
+	float: left;
+	height: 50%;
+	}
+
+	.effect__text {
+	.clearfix;
+		float: right;
+		width: 49%;
+	}
+}
+
+
+	 @media @desktop-widths {
+	 	.effect__sign {
+		height: 25%;
+	}
+
+	.effect__text {
+		width: 75%;
+	}
+
+}

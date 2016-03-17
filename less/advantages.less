@@ -1,0 +1,97 @@
+.avdantages {
+	.container;
+
+}
+
+.advantages__list,
+.advantages__picture-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.advantages__item {
+	  margin-bottom: 10px;
+ /* padding: 0 44px;*/
+  padding-top: 10px;
+}
+
+.advantages__item:first-child {
+	padding-top: 0;
+}
+
+.advantages__name {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 0;
+}
+
+.advantages__picture {
+	padding-top: 320px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.advantages__picture--1,
+.advantages__picture--2,
+.advantages__picture--3 {
+	background-image: url("../img/iphone-screen-mobile.png");
+}
+
+.advantages__picture {
+	display: none;
+}
+
+.advantages__picture-list li:first-child .advantages__picture {
+	display: block;
+}
+
+@media @tablet-widths {
+	.avdantages  {
+		.clearfix;
+	}
+
+	.advantages__picture-list {
+		float: left;
+		width: 30%;
+	}
+
+	.advantages__list  {
+		float: right;
+		width: 50%;
+	}
+}
+
+
+@media @desktop-widths {
+
+
+	.advantages__table {
+		display: table;
+		outline: 3px solid pink;
+	}
+
+
+	.advantages__picture {
+		display: block;
+		outline: 1px dotted white;
+	}
+
+  	.advantages__list,
+  	.advantages__picture-list {
+  		display: table-row;
+  		width: 100%;
+  		float: none;
+  		outline: 2px dashed green;
+  	}
+
+ 	 .advantages__item,
+ 	 .advantages__picture-list li{
+ 	 	padding-top: 0;
+ 	 	display: table-cell;
+ 	 	outline: 1px dotted white;
+ 	 }
+  }
+
+
