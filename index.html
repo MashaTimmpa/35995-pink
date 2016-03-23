@@ -8,49 +8,49 @@
 <body>
   <section class="main-index">
    <header class="main-index__header">
-     <div class="container">
-       <h1 class="main-nav__name">PINK</h1>
-       <nav class="main-nav">
+     <div class="main-nav__wrapper">
+      <div class="main-nav__logo"><img src="img/logo-pink-white-mobile.svg"></div>
+        <nav class="main-nav main-nav--closed">
+          <span class="main-nav__toggle main-nav__toggle--closed"></span>
           <ul class="main-nav__items">
-           <li class="main-nav__item">Информация</li>
-           <li class="main-nav__item">Возможности</li>
-           <li class="main-nav__item">Отзывы</li>
-           <li class="main-nav__item">Стоимость</li>
+           <li class=" main-nav__item main-nav__item--logo-mobile"><a><img src="img/logo-pink-white-mobile.svg"></a></li>
+           <li class="main-nav__item main-nav__item--active"><a>Информация</a></li>
+           <li class="main-nav__item"><a>Возможности</a></li>
+           <li class="main-nav__item"><a>Отзывы</a></li>
+           <li class="main-nav__item"><a>Стоимость</a></li>
          </ul>
         </nav>
       </div>
     </header>
-
-    <div class="container descript__picture-phone ">
-      <div class="descript">
-        <h2>Взгляните на жизнь иначе!</h2>
+      <div class="descript ">
+        <h2 class="descript__text">Взгляните на жизнь иначе!</h2>
       </div>
 
  <!--    <div class="descript__picture-phone container">     </div>
  -->
     <div class="download-panel">
-      <div class="dowload-panel__button">Скачать приложение</div>
-        <ul class="download-panel__systems">
-          <li class="download-panel__system download-panel__system--apple"><img src="img/logo-android.svg"></li>
-          <li class="download-panel__system download-panel__system--android"><img src="img/logo-apple.svg"></li>
-          <li class="download-panel__system download-panel__system--win"><img src="img/logo-microsoft.svg"></li>
-        </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="download-panel__wrapper">
+      <div class="dowload-panel__button"><a>Скачать приложение</a></div>
+      <ul class="download-panel__systems">
+        <li class="download-panel__system download-panel__system--apple"><img src="img/logo-android.svg"></li>
+        <li class="download-panel__system download-panel__system--android"><img src="img/logo-apple.svg"></li>
+        <li class="download-panel__system download-panel__system--win"><img src="img/logo-microsoft.svg"></li>
+      </ul>
+        <span class="download-panel__text"><p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p></span>
       </div>
     </div>
   </section>
 
-  <div class="avdantages">
-    <div "advantages__descript">
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
+  <section class="avdantages">
+
+    <div class="advantages__descript">
+      <div class="container">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
     </div>
-    <div class="advantages__table">
-      <ul class="advantages__picture-list">
-        <li><div class="advantages__picture advantages__picture--1"> </div></li>
-        <li><div class="advantages__picture advantages__picture--2"></div></li>
-        <li><div class="advantages__picture advantages__picture--3"></div></li>
-      </ul>
+    <div class="advantages__gradient">
+    <div class="advantages__table container">
       <ul class="advantages__list">
         <li class="advantages__item">
           <div class="advantages__name">Поднимает настроение</div>
@@ -65,87 +65,126 @@
           <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
          </li>
        </ul>
+       <ul class="advantages__picture-list">
+        <li><div class="advantages__picture advantages__picture--1"><img src="img/iphone-screen-mobile.png"> </div></li>
+        <li><div class="advantages__picture advantages__picture--2"><img src="img/iphone-screen-mobile.png"></div></li>
+        <li><div class="advantages__picture advantages__picture--3"><img src="img/iphone-screen-mobile.png"></div></li>
+      </ul>
      </div>
-</div>
-
-<div class="effect container">
-  <div class="effect__sign">
-      <img src="">
   </div>
-  <div class="effect__text clearfix">
-    <h3>Эффект на 24 часа!</h3>
-    <p class="effect__paragraph">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-    <p class="effect__paragraph 24-hours-effect__paragraph--small">Узнать больше об исследовании</p>
-  </div>
-</div>
+</section>
 
-<div class="reviews">
-  <div class="container">
-    <div class="review-item">
-      <div class="review-item__name">Николай Петров</div>
-      <p class="review-item__text container" >«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+
+<section class="effect">
+  <div class="effect__wrapper">
+    <div class="effect__sign">
+        <img src="img/diagram_24.png">
     </div>
-    <div class="reviews__pagination">
+    <div class="effect__text">
+      <h3>Эффект на 24 часа!</h3>
+      <p class="effect__paragraph">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="effect__link">Узнать больше об исследовании</a>
     </div>
   </div>
-</div>
-<div class="product container">
+</section>
+
+<section class="reviews container">
+  <div class="reviews__item-list">
+    <input class="slider-nav__switcher" type="radio" name="advantages" id="advantages-radio-1" checked>
+    <input class="slider-nav__switcher" type="radio" name="advantages" id="advantages-radio-2">
+    <input class="slider-nav__switcher" type="radio" name="advantages" id="advantages-radio-3">
+    <div class="review-item review-item--1">
+      <div class="review-item__author">
+      <span class="review-item__author-name">Николай Петров</span>
+      <span class="review-item__author-about">25 лет, водитель трамвая</span>
+      </div>
+      <p class="review-item__text" >«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+    </div>
+    <div class="review-item review-item--2">
+      <div class="review-item__author">
+        <span class="review-item__author-name">Пользователь 2 </span>
+        <span class="review-item__author-about">немного об авторе</span>
+      </div>
+      <p class="review-item__text " >Негативный отзыв о приложении»</p>
+    </div>
+    <div class="review-item review-item--3">
+      <div class="review-item__author">
+        <span class="review-item__author-name">Пользователь 3 </span>
+        <span class="review-item__author-about">немного об авторе</span>
+      </div>
+      <p class="review-item__text" >«Отличный отзыв о приложении»</p>
+    </div>
+    <div class="slider-nav review__nav">
+      <label class="slider-nav__btn slider-nav__btn--active" for="review-radio-1">1</label>
+      <label class="slider-nav__btn" for="review-radio-2">2</label>
+      <label class="slider-nav__btn" for="review-radio-3">3</label>
+    </div>
+  </div>
+</section>
+
+<section class="product">
+<div class="product__wrapper">
 <!--Здесь верстают таблицу-->
-    <ul class="product__items product__items--header">
-     <li class="product__item"></li>
-      <li class="product__item">
-        <div class="product__item-title product__item-title--name">Стандарт</div>
-        <span class="product__item-title product__item-title--price">3.99 USD</span>
+    <ul class="product__titles-list">
+      <li class="product__name"></li>
+      <li class="product__name">
+        <div class="product__name-title product__name-title--name">Стандарт</div>
+        <span class="product__name-title product__title-title--price">3.99 USD</span>
       </li>
-      <li class="product__item">
-        <div class="product__item-title product__item-title--name">База</div>
-        <span class="product__item-title product__item-title--price">3.99 USD</span>
+      <li class="product__name">
+        <div class="product__name-title product__name-title--name">База</div>
+        <span class="product__name-title product__name-title--price">3.99 USD</span>
       </li>
-      <li class="product__item">
-        <div class="product__item-title product__item-title--name">Анлим</div>
-        <span class="product__item-title product__item-title--price">3.99 USD</span>
+      <li class="product__name">
+        <div class="product__name-title product__name-title--name">Анлим</div>
+        <span class="product__name-title product__name-title--price">3.99 USD</span>
       </li>
     </ul>
-    <ul class="product__items product__items--title">
-      <li class="product__item product__item--enable">Розовый фильтр</li>
-      <li  class="product__item product__item--enable"><p class="text-mobile">Розовый фильтр</p></li>
-      <li  class="product__item  product__item--disable"><p class="text-mobile">Розовый фильтр</p></li>
-      <li  class="product__item  product__item--disable"><p class="text-mobile">Розовый фильтр</p></li>
+    <ul class="product__items">
+      <li class="product__item product__item--row-title "><p>Розовый фильтр</p></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Розовый фильтр</p><div class="product__mark product__mark--enable"></div></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Розовый фильтр</p><div class="product__mark product__mark--enable"></div></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Розовый фильтр</p><div class="product__mark product__mark--enable"></div></li>
     </ul>
-    <ul class="product__items product__items--standart">
-      <li class="product__item product__item--enable">Смайлики</li>
-      <li  class="product__item product__item--enable"><p class="text-mobile">Смайлики</p></li>
-      <li  class="product__item  product__item--disable"><p class="text-mobile">Смайлики</p></li>
-       <li  class="product__item  product__item--disable"><p class="text-mobile">Смайлики</p></li>
+    <ul class="product__items">
+      <li class="product__item product__item--row-title"><p>Смайлики</p></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Смайлики</p><div class="product__mark product__mark--enable"></div></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Смайлики</p><div class="product__mark product__mark--enable"></div></li>
+       <li  class="product__item product__item--item"><p class="text-mobile">Смайлики</p><p class="text-mobile"><div class="product__mark product__mark--disable"></li>
     </ul>
-     <ul class="product__items product__items--base">
-      <li class="product__item product__item--enable">Комментарии</li>
-      <li  class="product__item product__item--enable"><p class="text-mobile">Комментарии</p></li>
-      <li  class="product__item  product__item--disable"><p class="text-mobile">Комментарии</p></li>
-      <li  class="product__item  product__item--disable"><p class="text-mobile">Комментарии</p></li>
+     <ul class="product__items">
+      <li class="product__item product__item--row-title"><p>Комментарии</p></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Комментарии</p><div class="product__mark product__mark--disable"></div></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Комментарии</p><div class="product__mark product__mark--disable"></div></li>
+      <li  class="product__item product__item--item"><p class="text-mobile">Комментарии</p><div class="product__mark product__mark--enable"></div></li>
     </ul>
   </div>
-</div>
 
-<div class="contacts">
+</section>
+
+<section class="contacts">
   <div class="contacts__wrapper container">
     <div class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</div>
-    <div class="contact contact--tel">
-      <span class="contact__name">Звоните:</span>
-      <tel class="contact__value">+7 (812) 555-66-66</tel>
-    </div>
-    <div class="contact contact--mail">
-      <span class="contact__name">Пишите:</span>
-      <mail class="contact__value">mail@htmlacademy.ru</mail>
+    <div class="contact__items">
+        <div class="contact contact--tel">
+          <span class="contact__name">Звоните:</span>
+          <tel class="contact__value">+7 (812) 555-66-66</tel>
+        </div>
+        <div class="contact contact--mail">
+          <span class="contact__name">Пишите:</span>
+          <mail class="contact__value">mail@htmlacademy.ru</mail>
+          </div>
+        <div class="contact contact--adress">
+          <span class="contact__name">Приезжайте в гости:</span>
+          <span class="contact__value">
+            ул. Большая <br>Конюшенная, 19/8</span>
+        </div>
       </div>
-    <div class="contact contact--adress">
-      <span class="contact__name">Приезжайте в гости:</span>
-      <span class="contact__value">
-        ул. Большая <br>Конюшенная, 19/8</span>
-    </div>
   </div>
-</div>
-<div class="footer-map">
-</div>
+</section>
+<footer class="footer">
+  <div class="footer-map">
+  </div>
+</footer>
 </body>
 </html>

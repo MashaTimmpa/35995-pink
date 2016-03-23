@@ -1,0 +1,42 @@
+.descript {
+	.container;
+	display: block;
+	background-image: url("../img/iphone-hand-mobile.png");
+	padding-bottom: 360px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+	.descript__text{
+	display: none;
+	}
+
+	@media @tablet-widths {
+		.descript {
+			display: flex;
+			flex-direction: row;
+			align-content: flex-start;
+			background-image: none;
+			padding-bottom: 0;
+		}
+
+		.descript__text{
+		display: block;
+		padding-bottom: 0px;
+		font-size: 40px;
+		line-height: 50px;
+		font-weight: lighter;
+		flex-basis: 235px;
+		text-align: center;
+		color: #fff;
+	}
+
+}
+
+	 @media @desktop-widths {
+
+
+		.descript {
+		// width: 550px;
+		// padding-left: 570px;
+	}
+}
