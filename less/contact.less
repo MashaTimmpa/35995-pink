@@ -1,12 +1,4 @@
 
-.contacts__title {
-	text-align: center;
-	font-size: 24px;
-	font-weight: lighter;
-	line-height: 30px;
-	padding: 50px 0;
-}
-
 
 .contact__items {
 	display: flex;
@@ -40,6 +32,13 @@
 }
 
  @media @tablet-widths {
+
+	.contact__items {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
  	.contact--tel,
  	.contact--mail  {
 
@@ -48,13 +47,12 @@
 
  	}
 
- 		.contact--mail {
+ 	.contact--mail {
 
- 		}
+ 	}
 
  	.contact--adress {
- 		float: left;
- 		width: 100%;
+
  	}
  }
 

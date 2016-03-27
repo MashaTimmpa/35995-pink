@@ -72,6 +72,7 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 	display: none;
 	width: 162px;
 	margin: 0 auto;
+
 }
 
 .advantages__picture-list li:first-child .advantages__picture {
@@ -138,6 +139,11 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 		// outline: 3px solid pink;
 	}
 
+	.advantages__list{
+	padding-top: 50px;
+
+}
+
 	.advantages__gradient {
 		background-image: linear-gradient(176deg, transparent 12%, #f2f2f2 12%, #f2f2f2 100%);
 	}
@@ -149,16 +155,32 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 
 	.advantages__picture {
 		display: block;
+		height: 300px;
+		overflow: hidden;
+
 	}
+	// .advantages__picture-list li {
+	// box-shadow: inset 0px -6px 10px 0px #ABABAB;
+	// z-index: 5;
+	// }
 
   	.advantages__list,
   	.advantages__picture-list {
   		// display: table-row;
   		width: 100%;
   		display: flex;
-  		justify-content: space-between;
+   	}
 
-  	}
+	 .advantages__picture-list  {
+		justify-content: space-between;
+		padding-left: 20px;
+		padding-right: 20px;
+	 	}
+
+	.advantages__list{
+  	justify-content: space-between;
+  	padding-top: 0;
+	}
 
   	.advantages__list li{
   			text-align: center;
@@ -169,13 +191,41 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
  	 	padding-top: 0;
  	 }
 
- 	 	.advantages__item,
+ 	 	// .advantages__item,
  	 	.advantages__picture {
- 	 		margin-left: 30px;
+
  	 		margin-right: 50px;
+ 	 		position: relative;
  	 	}
 
-	.advantages__item:last-child,
+ 	 	.advantages__item {
+ 	 		margin-left: 0;
+ 	 		width: 230px;
+ 	 		margin-right: 0;
+
+ 	 		 position: relative;
+ 	 	}
+	.advantages__picture-list li {
+		display: flex;
+		position: relative;
+	}
+
+ 	.advantages__picture-list li:after {
+    content:"";
+    position:absolute;
+    width:220px;
+    background:#ccc;
+    height:1px;
+    bottom: 0px;
+    right:-14px;
+ 	box-shadow:         0px -1px 5px 0px rgba(0, 0, 0, 1);
+ 	z-index: 2;
+
+}
+
+
+
+ 	.advantages__item:last-child,
 	.advantages__picture:last-child {
 		margin-right: 0;
 	}
