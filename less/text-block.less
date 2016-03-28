@@ -1,3 +1,45 @@
 .text-block {
-	background-color: #F5DEB3;
+	background-color: #fff;
+}
+
+.text-block__wrapper {
+	padding: 50px 20px;
+}
+
+.text-block__content {
+
+	width: auto;
+	text-align: center;
+	font-size: 14px;
+}
+
+.text-block__content--hide-on-mobiles {
+	display: none;
+}
+
+@media @tablet-widths {
+  .text-block__wrapper {
+  	padding: 100px 60px 85px 60px;
+  }
+
+  .text-block__content--hide-on-mobiles {
+	display: block;
+}
+
+  .text-block__content {
+	font-size: 18px;
+}
+
+}
+
+  @media @desktop-widths {
+		.text-block__wrapper {
+			text-align: center;
+		}
+
+.text-block__content {
+		display: inline;
+
+
+}
 }

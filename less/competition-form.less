@@ -1,18 +1,55 @@
 .competition-form {
-	outline: 3px solid #A52A2A;
-	outline: table;
-	.container;
+	background-color: #fff;
+
 }
+
+.competition-form
+
+.competition-form__wrapper
+{
+		.container;
+		display: table;
+}
+
+
 
 .competition-form__fieldset {
-	outline: 2px dotted #FFC0CB;
+		border: none;
 }
 
-.competition-form__fieldset ul {
+.competition-form__fieldset--participant-info .competition-form__label {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #d22856;
+	padding-left: 28px;
+
+}
+
+.competition-form__input {
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 27px;
+	width: 90%;
+
+}
+
+::-webkit-input-placeholder {color:#283645;}
+::-moz-placeholder          {color:#283645;}/* Firefox 19+ */
+:-moz-placeholder           {color:#283645;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#283645;}
+
+
+
+.competition-form__item {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	margin-bottom: 30px;
+
+
 }
+
 
 
  @media @tablet-widths {
@@ -27,7 +64,7 @@
 
 .competition-form__fieldset ul {
 	padding: 0;
-	margin: 0;
+
 	width: 100%;
 }
 

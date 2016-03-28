@@ -6,16 +6,18 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="main-index">
-  <header class="main-index__header">
-     <div class="container">
-       <h1 class="main-nav__logo"><img src="img/logo-pink-white-mobile.svg"></h1>
-          <nav class="main-nav">
+<section class="main-index">
+   <header class="main-index__header">
+     <div class="main-nav__wrapper">
+      <div class="main-nav__logo"><img src="img/logo-pink-white-mobile.svg"></div>
+        <nav class="main-nav main-nav--closed">
+          <span class="main-nav__toggle main-nav__toggle--closed"></span>
           <ul class="main-nav__items">
-           <li class="main-nav__item">Информация</li>
-           <li class="main-nav__item">Возможности</li>
-           <li class="main-nav__item">Отзывы</li>
-           <li class="main-nav__item">Стоимость</li>
+           <li class=" main-nav__item main-nav__item--logo-mobile"><a><img src="img/logo-pink-white-mobile.svg"></a></li>
+           <li class="main-nav__item main-nav__item--active"><a>Информация</a></li>
+           <li class="main-nav__item"><a>Возможности</a></li>
+           <li class="main-nav__item"><a>Отзывы</a></li>
+           <li class="main-nav__item"><a>Стоимость</a></li>
          </ul>
         </nav>
       </div>
@@ -23,27 +25,31 @@
       <div class="main-index__title main-index__title--form container">
          <h2> Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
-  </div>
+  </section>
 
   <div class="text-block">
+   <div class="container">
     <div class="text-block__wrapper">
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+      <p class="text-block__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+      <p class="text-block__content text-block__content--hide-on-mobiles">Пожалуйста, заполните форму ниже:</p>
     </div>
+  </div>
   </div>
 
   <form class="competition-form">
+    <div class="competition-form__wrapper">
     <fieldset class="competition-form__fieldset competition-form__fieldset--participant-info">
       <ul class="competition-form__item">
         <li><label class="competition-form__label" for="name">Имя</label></li>
         <li><input class="competition-form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" requred></li>
       </ul>
-      <ul>
+      <ul class="competition-form__item">
         <li><label class="competition-form__label" for="surname">Фамилия</label></li>
         <li><input class="competition-form__input" type="text" id="surname" name="surname"placeholder="Укажите фамилию" required></li>
       </ul>
-      <ul>
+      <ul class="competition-form__item">
         <li><label class="competition-form__label" for="patronimic">Отчество</label></li>
-        <li><input class="competition-form__input" type="text" id="patronimic" name="patronimic" placeholder="class="competition-form__input"Ну и отчество тоже" required></li>
+        <li><input class="competition-form__input" type="text" id="patronimic" name="patronimic" placeholder="Ну и отчество тоже" class="competition-form__input" required></li>
       </ul>
 
 
@@ -51,7 +57,7 @@
     </fieldset>
     <fieldset class="competition-form__fieldset competition-form__fieldset--achievments">
       <label class="competition-form__title">Ваши безбашенные достижения в путешествии</label>
-        <ul>
+        <ul class="competition-form__item">
         <li><input class="competition-form__checkbox" id="checkbox-1" type="checkbox" checked></
          <label class="competition-form__label ompetition-form__label--chekbox" for="checkbox-1">Сделал селфи с акулой</label></li>
 
@@ -65,15 +71,15 @@
         <label class="competition-form__label competition-form__label--chekbox" for="checkbox-4">Накупил сувениров</label></li>
 
         <li><input class="competition-form__checkbox" id="checkbox-5" type="checkbox" checked>
-        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-5">Удержал башню</label>
+        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-5">Удержал башню</label></li>
 
         <li><input class="competition-form__checkbox"  id="checkbox-6" type="checkbox">
-        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-6">Разгромил отель</label>
+        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-6">Разгромил отель</label></li>
       </ul>
 
     </fieldset>
     <fieldset class="competition-form__fieldset competition-form__fieldset--participant-contacts">
-    <ul>
+    <ul class="competition-form__item">
       <li>
         <label for="phone" class="competition-form__label__label">Номерок телефончика</label>
         <input type="number" id="phone" name="phone" class="competition-form__input" placeholder="Номер, пожалуйста" required>
@@ -87,7 +93,7 @@
     <fieldset class="competition-form__fieldset competition-form__fieldset--app">
       <label class="competition-form__title">
         С каким приложением путешествовали?</label>
-      <ul>
+      <ul class="competition-form__item">
       <li>
         <input class="competition-form__radio" id="radio-1" type="radio" checked>
         <label class="competition-form__label" for="radio-1">Pink для iOS</label>
@@ -109,6 +115,7 @@
 
     <input class="competition-form__submition" type="submit" value="Отправить форму" >
     <div class="competition-form__primechanie"><sup>*</sup> — обязательные поля</div>
+    </div>
   </form>
  <footer class="page-footer">
       <div class="page-footer__logo"><img src="" alt="">PINK</div>
@@ -119,6 +126,7 @@
           <li class="page-footer__social-button page-footer__social-button--vimeo">vimeo</li>
         </ul>
       </div>
+      <
       <div class="page-footer__designe-by">
         Разработано
       </div>
