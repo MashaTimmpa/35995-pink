@@ -2,6 +2,68 @@
 	display: none;
 }
 
+.footer--form-page {
+	display: flex;
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+.footer__social-buttons {
+		list-style: none;
+		padding: 0;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		display: flex;
+		flext-direction: row;
+		justify-content: space-between;
+	}
+
+	.social-button {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 2px solid #e9ebec;
+		margin-right: 14px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+	}
+
+	.social-button:last-child {
+		margin-right: 0;
+	}
+
+	.social-button--twitter {
+		background-image: url("../img/twitter.png");
+	}
+
+	.social-button--facebook {
+		background-image: url("../img/facebook.png");
+	}
+
+	.social-button--youtube {
+		background-image: url("../img/youtube.png");
+	}
+
+	.footer__developer {
+		background-image: url("../img/htmlacademy.svg");
+		background-repeat: no-repeat;
+		background-size: 25%;
+		background-position: 100%;
+
+	}
+
+	.footer__developer a {
+		padding-right: 44px;
+		font-size: 14px;
+	}
 
  @media @tablet-widths {
 		.footer {
@@ -19,52 +81,10 @@
 		}
 
 		.footer__social-buttons {
-			list-style: none;
-			padding: 0;
 			margin: 0;
-			display: flex;
-			flext-direction: row;
-			justify-content: space-between;
 		}
 
-		.social-button {
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			border: 2px solid #e9ebec;
-			margin-right: 14px;
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
 
-		}
-
-		.social-button:last-child {
-			margin-right: 0;
-		}
-
-		.social-button--twitter {
-			background-image: url("../img/twitter.png");
-		}
-
-		.social-button--facebook {
-			background-image: url("../img/facebook.png");
-		}
-
-		.social-button--youtube {
-			background-image: url("../img/youtube.png");
-		}
-
-		.footer__developer {
-			background-image: url("../img/htmlacademy.svg");
-			background-repeat: no-repeat;
-			background-size: 25%;
-			background-position: 100%;
-		}
-
-		.footer__developer a {
-			padding-right: 44px;
-			font-size: 14px;
-		}
 
  }
 
@@ -72,5 +92,3 @@
 
 
  }
-
-

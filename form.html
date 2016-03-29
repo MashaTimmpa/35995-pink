@@ -36,100 +36,116 @@
   </div>
   </div>
 
-  <form class="competition-form">
-    <div class="competition-form__wrapper">
-    <fieldset class="competition-form__fieldset competition-form__fieldset--participant-info">
-      <ul class="competition-form__item">
-        <li><label class="competition-form__label" for="name">Имя</label></li>
-        <li><input class="competition-form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" requred></li>
+  <form class="form">
+    <div class="form__wrapper">
+    <fieldset class="form__fieldset form__fieldset--participant-info">
+      <ul class="form__list">
+        <li class="form__item form__item--text-input">
+          <label class="form__label-name" for="name">Имя</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" requred>
+        </li>
+        <li class="form__item form__item--text-input">
+          <label class="form__label-name" for="surname">Фамилия</label>
+          <input class="form__input" type="text" id="surname" name="surname"placeholder="Укажите фамилию" required>
+        </li>
+         <li class="form__item form__item--text-input">
+           <label class="form__label-name" for="patronimic">Отчество</label>
+           <input class="form__input" type="text" id="patronimic" name="patronimic" placeholder="Ну и отчество тоже" class="form__input" required>
+        </li>
       </ul>
-      <ul class="competition-form__item">
-        <li><label class="competition-form__label" for="surname">Фамилия</label></li>
-        <li><input class="competition-form__input" type="text" id="surname" name="surname"placeholder="Укажите фамилию" required></li>
-      </ul>
-      <ul class="competition-form__item">
-        <li><label class="competition-form__label" for="patronimic">Отчество</label></li>
-        <li><input class="competition-form__input" type="text" id="patronimic" name="patronimic" placeholder="Ну и отчество тоже" class="competition-form__input" required></li>
-      </ul>
+    </fieldset>
 
+    <fieldset class="form__fieldset form__fieldset--achievments">
+      <legend class="form__fieldset-legend">Ваши безбашенные достижения в путешествии</legend>
+      <label class="form__title">Ваши безбашенные достижения в путешествии</label>
+        <ul class="form__list">
+        <li  class="form__item">
+          <input class="form__checkbox" id="checkbox-1" name="checkbox-1" type="checkbox" checked>
+          <label for="checkbox-1" class="form__label-item form__label-item--checkbox" >Сделал селфи с акулой</label>
+        </li>
 
+        <li  class="form__item">
+          <input class="form__checkbox" id="checkbox-2" type="checkbox" checked>
+          <label class="form__label-item form__label-item--checkbox  " for="checkbox-2">Обгорел на пляже</label>
+        </li>
+
+        <li  class="form__item">
+          <input class="form__checkbox" id="checkbox-3" type="checkbox">
+          <label class="form__label-item form__label-item--checkbox" for="checkbox-3">Видел Чака Норриса</label>
+        </li>
+
+        <li  class="form__item">
+          <input class="form__checkbox" id="checkbox-4" type="checkbox">
+          <label class="form__label-item form__label-item--checkbox" for="checkbox-4">Накупил сувениров</label>
+        </li>
+
+        <li  class="form__item">
+          <input class="form__checkbox" id="checkbox-5" type="checkbox" checked>
+          <label class="form__label-item form__label-item--checkbox" for="checkbox-5">Удержал башню</label>
+        </li>
+
+        <li  class="form__item">
+          <input class="form__checkbox"  id="checkbox-6" type="checkbox">
+          <label class="form__label-item form__label-item--checkbox" for="checkbox-6">Разгромил отель</label>
+        </li>
+      </ul>
 
     </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--achievments">
-      <label class="competition-form__title">Ваши безбашенные достижения в путешествии</label>
-        <ul class="competition-form__item">
-        <li><input class="competition-form__checkbox" id="checkbox-1" type="checkbox" checked></
-         <label class="competition-form__label ompetition-form__label--chekbox" for="checkbox-1">Сделал селфи с акулой</label></li>
-
-        <li><input class="competition-form__checkbox" id="checkbox-2" type="checkbox" checked>
-        <label class="competition-form__label ompetition-form__label--chekbox" for="checkbox-2">Обгорел на пляже</label></li>
-
-        <li><input class="competition-form__checkbox" id="checkbox-3" type="checkbox">
-       <label class="competition-form__label competition-form__label--chekbox" for="checkbox-3">Видел Чака Норриса</label></li>
-
-        <li><input class="competition-form__checkbox" id="checkbox-4" type="checkbox">
-        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-4">Накупил сувениров</label></li>
-
-        <li><input class="competition-form__checkbox" id="checkbox-5" type="checkbox" checked>
-        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-5">Удержал башню</label></li>
-
-        <li><input class="competition-form__checkbox"  id="checkbox-6" type="checkbox">
-        <label class="competition-form__label competition-form__label--chekbox" for="checkbox-6">Разгромил отель</label></li>
-      </ul>
-
-    </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--participant-contacts">
-    <ul class="competition-form__item">
-      <li>
-        <label for="phone" class="competition-form__label__label">Номерок телефончика</label>
-        <input type="number" id="phone" name="phone" class="competition-form__input" placeholder="Номер, пожалуйста" required>
+    <fieldset class="form__fieldset form__fieldset--participant-contacts">
+    <legend class="form__fieldset-legend">Контактная информация</legend>
+    <ul class="form__list">
+      <li class="form__item">
+        <label for="phone" class="form__label-name">Номерок телефончика</label>
+        <input type="tel" id="phone" name="phone" class="form__input" placeholder="Номер, пожалуйста" required>
       </li>
-      <li>
-        <label for="email" class="competition-form__label__label">адресок почты</label>
-        <input type="number" id="email" name="email" class="competition-form__input" placeholder="E-mail, пожалуйста" required>
-      </li>
+      <li class="form__item">
+        <label for="email" class="form__label-name">адресок почты</label>
+        <input type="email" id="email" name="email" class="form__input" placeholder="E-mail, пожалуйста" required>
+      </li >
       </ul>
     </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--app">
-      <label class="competition-form__title">
+    <fieldset class="form__fieldset form__fieldset--app">
+    <legend class="form__fieldset-legend">С каким приложением путешествовали?</legend>
+      <label class="form__title">
         С каким приложением путешествовали?</label>
-      <ul class="competition-form__item">
-      <li>
-        <input class="competition-form__radio" id="radio-1" type="radio" checked>
-        <label class="competition-form__label" for="radio-1">Pink для iOS</label>
+      <ul class="form__list">
+      <li class="form__item">
+        <input class="form__radio" id="radio-1" type="radio" checked>
+        <label class="form__label-item form__label-item--radio" for="radio-1">Pink для iOS</label>
       </li>
-      <li>
-        <input class="competition-form__radio" id="radio-2" type="radio" checked>
-        <label class="competition-form__label" for="radio-2">Pink на Android</label>
+      <li class="form__item">
+        <input class="form__radio" id="radio-2" type="radio">
+        <label class="form__label-item form__label-item--radio" for="radio-2">Pink на Android</label>
       </li>
-      <li>
-        <input class="competition-form__radio" id="radio-3" type="radio" checked>
-        <label class="competition-form__label" for="radio-3">Windows Phone</label>
+      <li class="form__item">
+        <input class="form__radio" id="radio-3" type="radio">
+        <label class="form__label-item form__label-item--radio" for="radio-3">Windows Phone</label>
       </li>
       </ul>
     </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--emotions">
-      <label class="competition-form__title">Опишите свои эмоции</label>
-      <input type="textarea" rows="6" class="competition-form__input">
+    <fieldset class="form__fieldset form__fieldset--emotions">
+    <legend class="form__fieldset-legend">Опишите свои эмоции</legend>
+      <label class="form__title">Опишите свои эмоции</label>
+      <textarea rows="6" class="form__input form__input--textarea"></textarea>
     </fieldset>
-
-    <input class="competition-form__submition" type="submit" value="Отправить форму" >
-    <div class="competition-form__primechanie"><sup>*</sup> — обязательные поля</div>
+    <div class="form__conclusion">
+        <input class="form__submition" type="submit" value="Отправить форму" >
+        <div class="form__primechanie"><sup>*</sup> — обязательные поля</div>
+    </div>
     </div>
   </form>
- <footer class="page-footer">
-      <div class="page-footer__logo"><img src="" alt="">PINK</div>
-      <div class="page-footer__social-buttonons">
-        <ul class="page-footer__social-buttons-list">
-          <li class="page-footer__social-button page-footer__social-button--twitter">twitter</li>
-          <li class="page-footer__social-button page-footer__social-button--facebook">facebook</li>
-          <li class="page-footer__social-button page-footer__social-button--vimeo">vimeo</li>
-        </ul>
+<footer class="footer--form-page">
+    <div class="footer__wrapper container">
+        <div class="footer__logo">
+            <img src="img/logotype-blue-tablet.png">
       </div>
-      <
-      <div class="page-footer__designe-by">
-        Разработано
-      </div>
-    </footer>
+      <ul class="footer__social-buttons">
+        <li class="social-button social-button--twitter"></li>
+        <li class="social-button social-button--facebook"></li>
+        <li class="social-button social-button--youtube"></li>
+      </ul>
+      <div class="footer__developer"><a>Разработано</a></div>
+    </div>
+  </footer>
 </body>
 </html>
