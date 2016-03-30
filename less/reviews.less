@@ -1,29 +1,139 @@
 .reviews {
-/*	outline: 2px dashed grey;*/
-	.clearfix;
+background-color: #fff;
+}
+
+.review-item__author-about {
+  display: none;
+}
+
+ .reviews input[type="radio"] {
+  display: none;
+}
+
+.reviews__item-list {
+	padding-top: 55px;
+	padding-bottom: 42px;
 }
 
 .review-item {
-	display: table;
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 25px;
+	padding-bottom: 48px;
+
 }
 
-.review-item__name,
-.review-item__text {
-	display: table-row;
-	width: 100%;
+.review-item:nth-of-type(n+2) {
+  display: none;
+}
 
+.review-item__author,
+.review-item__text {
+	text-align: center;
+
+}
+
+.review-item__author-name {
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	padding-bottom: 30px;
+}
+
+.review-item__text {
+	font-size: 14px;
+	color: #283645;
+}
+
+.slider-nav {
+  font-size: 0;
+  text-align: center;
+  line-height: 20px;
+}
+
+.slider-nav__btn {
+  position: relative;
+
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 13px;
+
+
+  border-radius: 50%;
+  background-color: #bec2c7;
+  cursor: pointer;
+}
+
+.slider-nav__btn::after {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  width: 25px;
+  height: 25px;
+
+  transform: rotate(-45deg);
+}
+
+.slider-nav__btn--active {
+  background-color: #ebeced;
+  border:  3px solid #283645;
 }
 
 @media @tablet-widths {
+  .review-item {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
 
+  .reviews__item-list {
+    padding-bottom: 0;
+  }
 
-	.review-item__name {
-		display: table-footer-group
+  .review-item__author-about  {
+    display: block;
+    font-size: 14px;
+  }
+
+	.review-item__author {
+    order: 2;
 	}
+
+  .review-item__text {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .review-item:before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 65px;
+    background-image: url("../img/quotes.svg.png");
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .review-item__about-athor {
+    display: block;
+    text-align: center;
+  }
 
 /*	.review-item__text {
 
 		}*/
+    .slider-nav  {
+      display: none;
+    }
 
+}
+
+ @media @desktop-widths {
+.review-item {
+  width: 720px;
+    }
 }

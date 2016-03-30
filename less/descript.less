@@ -1,0 +1,58 @@
+.descript {
+	.container;
+	display: block;
+
+	padding-bottom: 389px;
+
+}
+
+.download-big__wrapper {
+	.container;
+	background-image: url("../img/iphone-hand-mobile.png");
+	background-repeat: no-repeat;
+	background-position: center 26%;
+}
+
+	.descript__text{
+	display: none;
+	}
+
+	@media @tablet-widths {
+
+		.download-big__wrapper {
+			background-size: 464px;
+			background-position: 100% bottom;
+	}
+
+		.descript {
+			display: flex;
+			flex-direction: row;
+			align-content: flex-start;
+
+			padding-bottom: 0;
+		}
+
+		.descript__text{
+		display: block;
+		padding-bottom: 0px;
+		font-size: 40px;
+		line-height: 50px;
+		font-weight: 200;
+		flex-basis: 235px;
+		text-align: center;
+		color: #fff;
+	}
+
+}
+
+	 @media @desktop-widths {
+
+
+		.download-big__wrapper {
+			background-size: 555px;
+	}
+
+	.descript__text{
+		font-size: 50px;
+		padding-left: 35px;}
+}

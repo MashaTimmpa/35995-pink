@@ -1,25 +1,58 @@
+
+
+.contact__items {
+	display: flex;
+	flex-direction: column;
+
+}
+
 .contact {
-	display: block;
-	border: 1px dotted #FFC0CB;
-	.clearfix;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-grow: 1;
+	padding-bottom: 30px;
+
+}
+
+.contact__name {
+	font-weight: bold;
+	font-size: 18px;
+	color: #283645;
+	width: 100%;
+	text-align: center;
+}
+
+.contact__value {
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+	font-size: 24px;
+	color: #d22856;
 }
 
  @media @tablet-widths {
+
+	.contact__items {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
  	.contact--tel,
  	.contact--mail  {
- 		width: 50%;
+
  	}
  	.contact--tel {
- 		float: left;
+
  	}
 
- 		.contact--mail {
- 			float: right;
- 		}
+ 	.contact--mail {
+
+ 	}
 
  	.contact--adress {
- 		float: left;
- 		width: 100%;
+
  	}
  }
 
