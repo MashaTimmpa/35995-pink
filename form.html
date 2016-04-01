@@ -13,7 +13,13 @@
         <nav class="main-nav main-nav--closed">
           <span class="main-nav__toggle main-nav__toggle--closed"></span>
           <ul class="main-nav__items">
-           <li class=" main-nav__item main-nav__item--logo-mobile"><a><img src="img/logo-pink-white-mobile.svg"></a></li>
+           <li class=" main-nav__item main-nav__item--logo-mobile"><a>
+             <picture>
+               <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+               <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+               <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+             </picture>
+            </a></li>
            <li class="main-nav__item main-nav__item--active"><a>Информация</a></li>
            <li class="main-nav__item"><a>Возможности</a></li>
            <li class="main-nav__item"><a>Отзывы</a></li>
@@ -137,7 +143,11 @@
 <footer class="footer--form-page">
     <div class="footer__wrapper container">
         <div class="footer__logo">
-            <img src="img/logotype-blue-tablet.png">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-pink-blue-tablet.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="PINK">
+          </picture>
       </div>
       <ul class="footer__social-buttons">
         <li class="social-button social-button--twitter"></li>

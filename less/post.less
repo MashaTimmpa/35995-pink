@@ -1,4 +1,125 @@
 .post {
-	border: 2px solid #A52A2A;
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+}
+
+.post__wrapper {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.post--of-the-day {
+	width: 100%;
+	flex-grow: 4;
+}
+
+.post__photo--of-the-day {
+	width: 100%;
+}
+
+.post__header {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.post__author {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.post__time-publicated {
+	font-weight: 200;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.post__text {
+	font-size: 14px;
+}
+
+.post__likes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #d22856;
+}
+
+.post__likes svg {
+	width: 13px;
+	height: 13px;
+}
+
+.post__num-likes {
+	padding-left: 22px;
+	font-size: 12px;
+}
+
+
+  @media @tablet-widths {
+
+.post {
+ 			width: 43.5%;
+ 		}
+
+ 		.post.post--of-the-day {
+ 			width: 100%;
+ 		}
+
+ 	.post__wrapper {
+ 		width: 260px;
+ 		height: 154px;
+ 		display: flex;
+ 		flex-direction: row;
+ 		flex-wrap: wrap;
+ 		// align-items: flex-start;
+
+ 	}
+
+		.post__likes {
+			self-align: flex-end;
+		}
+ 	}
+
+ @media @desktop-widths {
+
+ 	.post__wrapper--of-the-day {
+ 		width: auto;
+ 		height: auto;
+ 		display: flex;
+ 		flex-direction: row;
+ 		flex-wrap: wrap;
+}
+ .post--of-the-day .post__likes{
+  order: 2;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.post--of-the-day .post__wrapper {
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.post--of-the-day .post__text {
+	order: 3;
+	width: 100%;
+}
+
+.post--of-the-day svg {
+	order: 2;
+	padding-left: 15px;
+}
+
+.post--of-the-day .post__time-publicated {
+	padding-left: 5px;
+}
+
+.post {
+ 			width: auto;
+ 		}
 
 }
