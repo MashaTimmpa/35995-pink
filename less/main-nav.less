@@ -18,10 +18,6 @@
 	height: 30px;
 }
 
-.main-nav__logo {
-	display: none;
-}
-
 .main-nav__items {
   margin: 0;
   padding: 0;
@@ -172,10 +168,19 @@
   .main-nav {
 	  display: flex;
     flex-direction: row;
-    margin-left: auto;
-    width: auto;
+    width: 100%;
     min-height: 70px;
 	}
+
+  .main-nav__items {
+    margin-left: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-nav__item {
+    margin: 20px;
+  }
 
 .main-nav__item a {
   border: none;
@@ -185,14 +190,9 @@
 }
 
 .main-nav__item--logo-mobile {
-  display: none;
+margin-right: 170px;
 }
 
-.main-nav__logo {
-  display: block;
-  margin-top: 40px;
-
-}
 
 	.main-nav__items {
     display: flex;
@@ -204,9 +204,6 @@
 	  width: 150px;
 	}
 
-	.main-nav__item {
-	  margin: 20px;
-	}
 	.main-nav__item:last-child {
 	  margin-right: 0;
 	}

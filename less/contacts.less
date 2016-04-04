@@ -2,7 +2,34 @@
 		background-color: white;
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
+
+.contacts:after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+
+      width: 100%;
+      height: 41px;
+
+      background-image:
+        linear-gradient(
+          to top right,
+          transparent 50%,
+           white 50%
+           ),
+        linear-gradient(
+          to top left,
+          transparent 50%,
+           white 50%
+          );
+         background-repeat: no-repeat;
+      background-position: 0 0, 100% 0;
+      background-size: 50.1% 100%;
+}
+
 
 
 .contacts__title {
@@ -25,5 +52,10 @@
  	.contacts__title {
  		font-size: 50px;
  		line-height: 61px;
+ 	}
+
+ 	.contacts:after {
+ 		bottom:-59px;
+ 		height: 60px;
  	}
  }
