@@ -1,6 +1,7 @@
 .main-index {
 background-image: url("../img/bg-back-mobile.jpg");
 background-repeat: no-repeat;
+background-position: 50% 0%;
 }
 
 @media
@@ -16,7 +17,7 @@ background-size: 768px auto;
 display: flex;
 width: 100%;
 background-repeat:  no-repeat;
-background-size: 220%;
+// background-size: 220%;
 color: white;
 background-color: rgba(0, 0, 0, 0.3);
 
@@ -32,7 +33,8 @@ padding-top: 40px;
 padding-bottom: 60px;
 }
 
-.main-index__title--form h2{
+.main-index__title--form h2,
+.main-index__title--photo h2{
 font-size: 24px;
 font-weight: 300;
 color: #fff;
@@ -45,19 +47,31 @@ text-align: center;
 @media @tablet-widths {
 
 .main-index {
-background-size: 135%;
+
 overflow: hidden;
-background-position: 50% 40%;
+background-position: 45% 0%;
+
 }
 
-.main-index__title--form {
+.main-index__title--form  {
 padding-top: 85px;
 padding-bottom: 90px;
 }
 
-.main-index__title--form h2 {
+.main-index__title--photo {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.main-index__title--form h2,
+.main-index__title--photo h2 {
 font-size: 50px;
 line-height: 60px;
+}
+
+.main-index__title--photo h2 {
+	margin: 0 auto;
+	width: 50%;
 }
 
 .main-index {

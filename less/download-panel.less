@@ -1,107 +1,106 @@
 .download-panel {
 
-	background-color: #1d2631;
+background-color: #1d2631;
+margin-top: -15px;
 
-	// margin-top: 280px;}//
+// margin-top: 280px;}//
 }
 
 .download-panel__wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 30px;
-	padding-bottom: 35px;
-	.container;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 30px;
+padding-bottom: 35px;
+.container;
 }
 
-	.dowload-panel__button {
-		border: 3px solid #fff;
-		border-radius: 60px;
-		padding: 18px 35px;
-	}
+.dowload-panel__button {
+border: 3px solid #fff;
+border-radius: 60px;
+padding: 18px 35px;
+}
 
-	.dowload-panel__button a {
-		color: #fff;
-		font-weight: bold;
-	}
+.dowload-panel__button a {
+color: #fff;
+font-weight: bold;
+}
 
-	.download-panel__systems {
-		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
-		padding: 0;
-		width: 270px;
-		list-style: none;
+.download-panel__systems {
+display: flex;
+justify-content: space-around;
+align-items: baseline;
+padding: 0;
+width: 270px;
+list-style: none;
 
 }
 
-	.download-panel__systems li{
-		grow-flex: 1;
-	}
+.download-panel__systems li{
+grow-flex: 1;
+}
 
-		.download-panel__text {
-			color: #fff;
-			width: 250px;
-			text-align: center;
-		font-size: 14px;
-		font-weight: lighter;
-	}
+.download-panel__text {
+color: #fff;
+width: 250px;
+text-align: center;
+font-size: 14px;
+font-weight: lighter;
+}
 
 
 
 @media @tablet-widths {
-	.download-panel {
-	background: none;
+.download-panel {
+background: none;
+margin-top: 10px;
+padding-bottom: 0px;
+}
 
+.dowload-panel__button {
+padding: 10px 30px;
+}
 
-	margin-top: 10px;
-	padding-bottom: 116px;
-	}
+.download-panel__wrapper {
+align-items: flex-start;
+}
 
-	.dowload-panel__button {
-		padding: 10px 30px;
-	}
+.download-panel__systems {
+padding-top: 24px;
+padding-bottom: 24px;
+margin: 0;
+}
 
-	.download-panel__wrapper {
-		align-items: flex-start;
-	}
+.download-panel__system {
+margin: 10px;
+// float: left;
+}
 
-	.download-panel__systems {
-		padding-top: 48px;
-		padding-bottom: 46px;
-		margin: 0;
-	}
+.download-panel__system img {
+width: 40px;
+}
 
-	.download-panel__system {
-	margin: 10px;
-	// float: left;
-	}
-
-	.download-panel__system img {
-	width: 40px;
-	}
-
-	.download-panel__text{
-		width: 300px;
-		font-size: 18px;
-	}
+.download-panel__text{
+width: 300px;
+font-size: 18px;
+}
 
 }
-	 @media @desktop-widths {
+@media @desktop-widths {
 
 
-	.download-panel__systems {
-		padding-top: 70px;
-		padding-bottom: 65px;
-	}
+.download-panel__systems {
+padding-top: 70px;
+padding-bottom: 65px;
+}
 
-	.download-panel__text {
-		width: 340px;
+.download-panel__text {
+width: 340px;
 }
 
 .dowload-panel__button a {
-	font-size: 21px;
+font-size: 21px;
 }
 
 
-  }
+}

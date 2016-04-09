@@ -1,18 +1,13 @@
 "use strict";
 
 module.exports = function(grunt) {
-  // require("load-grunt-tasks")(grunt);
-   // grunt.loadNpmTasks("grunt-contrib-less");
-   // grunt.loadNpmTasks("grunt-postcss");
-   // grunt.loadNpmTasks("grunt-contrib-watch");
-   // grunt.loadNpmTasks("grunt-browser-sync");
-     require("load-grunt-tasks")(grunt);
+       require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "build/css/style.css": "less/style.less"
         }
       }
     },
@@ -29,11 +24,12 @@ module.exports = function(grunt) {
           ]}),
            require("css-mqpacker")({
                   sort: true
-                  })
+                  }),
+           require('postcss-flexboxfixer')
         ]
       },
       style: {
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -43,7 +39,7 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
-          "css/style.min.css": ["css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
     },
@@ -55,7 +51,7 @@ module.exports = function(grunt) {
         },
         files: [{
            expand: true,
-           src: ["img/**/*.{png,jpg,gif}"]
+           src: ["build/img/**/*.{png,jpg,gif}"]
          }]
        }
     },
@@ -65,12 +61,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "./build",
           watchTask: true,
           notify: false,
           open: true,
@@ -80,17 +76,53 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ["less/**/*.less"],
-      tasks: ["less", "postcss"],
-      options: {
-        spawn: false
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"],
+        options: {spawn: false}
+      },
+      style: {
+        files: ["less/**/*.less"],
+        tasks: ["less", "postcss", "csso"],
+        options: {
+          spawn: false
       }
+     }
+    },
+
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+          "fonts/**/*.{woff,woff2}",
+          "img/**",
+          "js/**",
+          "*.html"
+          ],
+          dest: "build"
+        }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+
+        }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
 
   grunt.registerTask("build", [
+    "clean",
+    "copy",
     "less",
     "postcss",
     "csso",

@@ -17,8 +17,7 @@
 @import "descript.less";
 @import "map.less";
 @import "footer.less";
-
-
+@import "slider__nav";
 
 @mobile-widths-only: ~"(max-width: 767px)";
 @mobile-and-tablet-widths-only: ~"(max-width: 1199px)";
@@ -27,14 +26,6 @@
 @bg-color: #1d2631;
 @pink-color: #d22856;
 
-
-@font-face {
-  font-family: 'OpenSans';
-  src:  url('../fonts/opensans.woff2') format('woff2'),
-        url('../fonts/opensans.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 @font-face {
@@ -50,7 +41,15 @@
   font-family: 'OpenSans';
   src:  url('../fonts/opensanslight.woff2') format('woff2'),
         url('../fonts/opensanslight.woff') format('woff');
-  font-weight: 300;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:  url('../fonts/opensans.woff2') format('woff2'),
+        url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -58,12 +57,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: @bg-color;
+  background-color: #fff;
   color: white;
   .clearfix;
   font-size: 18px;
   line-height: 27px;
-  font-family: OpenSans, sans-serif;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: normal;
   color: #283645;
   font-style: normal;
 

@@ -75,14 +75,14 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 
 }
 
-.advantages__picture-list li:first-child .advantages__picture {
+.advantages__picture-list li:nth-child(3) .advantages__picture {
 	display: block;
 }
 
 @media @tablet-widths {
 	.avdantages  {
-
 	}
+
 	.advantages__gradient {
 		background-image: linear-gradient(177deg, transparent 12%, #f2f2f2 12%, #f2f2f2 100%);
 	}
@@ -92,6 +92,10 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 		flex-direction: row;
 		justify-content: space-between
 	}
+
+	.advantages__picture-list li:nth-child(3) .advantages__picture {
+align-self: flex-end;
+}
 
 	.advantages__descript {
 		font-size: 40px;
@@ -114,14 +118,15 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 
 	.advantages__picture-list {
 		order:0;
+		align-self: flex-end;
 	}
 
 	.advantages__picture {
 		width: auto;
 	}
-	.advantages__picture img {
-		width: 267px;
-	}
+	// .advantages__picture img {
+	// 	width: 267px;
+	// }
 
 	.advantages__item {
 		text-align: left;
@@ -135,38 +140,20 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 
 	.advantages__table {
 		flex-wrap: wrap;
-		// display: table;
-		// outline: 3px solid pink;
 	}
-
-	.advantages__list{
-	padding-top: 50px;
-
-}
 
 	.advantages__gradient {
 		background-image: linear-gradient(176deg, transparent 12%, #f2f2f2 12%, #f2f2f2 100%);
-	}
-
-
-	.advantages__picture img {
-		width: 190px;
 	}
 
 	.advantages__picture {
 		display: block;
 		height: 300px;
 		overflow: hidden;
-
 	}
-	// .advantages__picture-list li {
-	// box-shadow: inset 0px -6px 10px 0px #ABABAB;
-	// z-index: 5;
-	// }
 
   	.advantages__list,
   	.advantages__picture-list {
-  		// display: table-row;
   		width: 100%;
   		display: flex;
    	}
@@ -178,7 +165,7 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 	 	}
 
 	.advantages__list{
-  	justify-content: space-between;
+  	justify-content: space-around;
   	padding-top: 0;
 	}
 
@@ -210,22 +197,7 @@ background-image: linear-gradient(177deg, transparent 5%, #f2f2f2 5%, #f2f2f2 10
 		position: relative;
 	}
 
- 	.advantages__picture-list li:after {
-    content:"";
-    position:absolute;
-    width:220px;
-    background:#ccc;
-    height:1px;
-    bottom: 0px;
-    right:-14px;
- 	box-shadow:         0px -1px 5px 0px rgba(0, 0, 0, 1);
- 	z-index: 2;
-
-}
-
-
-
- 	.advantages__item:last-child,
+	.advantages__item:last-child,
 	.advantages__picture:last-child {
 		margin-right: 0;
 	}
