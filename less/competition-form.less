@@ -101,7 +101,7 @@
 	}
 
 .form__checkbox[type="checkbox"]:checked + .form__label-item--checkbox::before  {
-	background: url("/img/checked.png") no-repeat 50% 50%;
+	background: url("../img/checked.png") no-repeat 50% 50%;
 }
 
 .form__fieldset--achievments,
@@ -116,7 +116,7 @@
 	}
 
 .form__radio[type="radio"]:checked + .form__label-item--radio::before  {
-	background: url("/img/radio_checked.png") no-repeat 50% 50%;
+	background: url("../img/radio_checked.png") no-repeat 50% 50%;
 }
 
 .form__submition[type=submit] {
@@ -361,6 +361,14 @@ flex-grow: 0;
 .form__fieldset--participant-contacts .form__list,
 .form__fieldset--achievments  .form__list{
 	flex-direction: row;
+}
+
+.form__fieldset--participant-contacts .form__item:first-child {
+	margin-right: 20px;
+}
+
+.form__fieldset--participant-contacts .form__item:last-child {
+	margin-left: 20px;
 }
 
 

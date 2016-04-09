@@ -1,0 +1,35 @@
+.slider-nav {
+  font-size: 0;
+  text-align: center;
+  line-height: 20px;
+}
+
+.slider-nav__btn {
+  position: relative;
+
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 13px;
+
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.slider-nav__btn::after {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  width: 25px;
+  height: 25px;
+
+  transform: rotate(-45deg);
+}
+
+.slider-nav__btn--active {
+  background-color: #ffffff;
+}

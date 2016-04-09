@@ -1,125 +1,211 @@
 .post {
-		margin: 20px;
-		display: flex;
-		flex-direction: column;
+margin: 20px;
+display: flex;
+flex-direction: column;
 }
 
 .post__wrapper {
-	background-color: #f2f2f2;
-	padding: 20px;
+background-color: #f2f2f2;
+padding: 20px;
 }
 
 .post--of-the-day {
-	width: 100%;
-	flex-grow: 4;
+width: 100%;
+margin: 0;
 }
 
 .post__photo--of-the-day {
-	width: 100%;
+width: 100%;
+}
+
+
+.post__photo-wrapper--of-the-day
+{	position: relative;}
+
+
+.post__photo-wrapper--of-the-day:before {
+content:"Панорама дня";
+display: block;
+background-color: #d22856;
+line-height: 36px;
+position: absolute;
+top: 0;
+right:20px;
+color: #fff;
+text-transform: uppercase;
+font-size: 12px;
+font-weight: bold;
+padding: 0 20px;
+
 }
 
 .post__header {
-	display: flex;
-	flex-direction: row;
+display: flex;
+flex-direction: row;
 
 }
 
 .post__author {
-	font-weight: bold;
-	font-size: 14px;
+font-weight: bold;
+font-size: 14px;
 }
 
 .post__time-publicated {
-	font-weight: 200;
-	font-size: 12px;
-	text-transform: uppercase;
+font-weight: 200;
+font-size: 12px;
+text-transform: uppercase;
 }
 
 .post__text {
-	font-size: 14px;
+font-size: 14px;
 }
 
 .post__likes {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	color: #d22856;
+display: flex;
+flex-direction: row;
+align-items: center;
+color: #d22856;
 }
 
 .post__likes svg {
-	width: 13px;
-	height: 13px;
+width: 13px;
+height: 13px;
 }
 
 .post__num-likes {
-	padding-left: 22px;
-	font-size: 12px;
+padding-left: 22px;
+font-size: 12px;
 }
 
 
-  @media @tablet-widths {
+@media @tablet-widths {
 
 .post {
- 			width: 43.5%;
- 		}
-
- 		.post.post--of-the-day {
- 			width: 100%;
- 		}
-
- 	.post__wrapper {
- 		width: 260px;
- 		height: 154px;
- 		display: flex;
- 		flex-direction: row;
- 		flex-wrap: wrap;
- 		// align-items: flex-start;
-
- 	}
-
-		.post__likes {
-			self-align: flex-end;
-		}
- 	}
-
- @media @desktop-widths {
-
- 	.post__wrapper--of-the-day {
- 		width: auto;
- 		height: auto;
- 		display: flex;
- 		flex-direction: row;
- 		flex-wrap: wrap;
+width: 43.5%;
 }
- .post--of-the-day .post__likes{
-  order: 2;
-  margin-left: auto;
-  margin-right: 0;
+
+
+.post__wrapper {
+width: 260px;
+height: 154px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.post__likes {
+self-align: flex-end;
+width: 100%;
+justify-content: space-between;
+}
+
+.post__num-likes {
+	padding: 0;
+}
+
+.post__likes svg {
+	order: 2;
+}
+
+.post.post--of-the-day {
+background-color: #fff;
+width: 100%;
+}
+.post__wrapper--of-the-day{
+.container;
+display: flex;
+flex-direction: row;
+padding: 0;
+
+}
+
+.post__wrapper--of-the-day .post__header,
+.post__wrapper--of-the-day .post__text,
+.post__wrapper--of-the-day .post__likes {
+   padding-top: 15px;
+   padding-left: 25px;
+}
+
+.post__wrapper--of-the-day .post__text {
+padding-top: 0;
+padding-bottom: 25px;
+order: 3;
+width: 100%;
+}
+
+.post__wrapper--of-the-day .post__header {
+	flex-grow: 3;
+}
+
+.post__wrapper--of-the-day .post__likes {
+	flex-grow: 0;
+	justify-content: flex-end;
+	width: auto;
+}
+
+.post__wrapper--of-the-day .post__num-likes {
+	padding-right: 20px;
+}
+
+.post__photo-wrapper--of-the-day:before {
+top: 57px;
+right: 40px;
+}
+
+.post__wrapper--of-the-day {
+width: 100%;
+padding: 0;
+}
+
+}
+
+@media @desktop-widths {
+.post__photo-wrapper--of-the-day img{
+	height: 507px;
+}
+
+.post__photo-wrapper--of-the-day:before {
+right: 130px;
+}
+
+.post__wrapper--of-the-day {
+width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.post--of-the-day .post__likes{
+order: 2;
+margin-left: auto;
+margin-right: 0;
 }
 
 .post--of-the-day .post__wrapper {
-	padding: 30px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+// padding: 30px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .post--of-the-day .post__text {
-	order: 3;
-	width: 100%;
+order: 3;
+width: 100%;
 }
 
 .post--of-the-day svg {
-	order: 2;
-	padding-left: 15px;
+order: 2;
+padding-left: 15px;
 }
 
 .post--of-the-day .post__time-publicated {
-	padding-left: 5px;
+padding-left: 5px;
 }
 
 .post {
- 			width: auto;
- 		}
+width: auto;
+margin:0;
+ margin-bottom: 60px;
+}
 
 }

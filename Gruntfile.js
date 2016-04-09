@@ -24,7 +24,8 @@ module.exports = function(grunt) {
           ]}),
            require("css-mqpacker")({
                   sort: true
-                  })
+                  }),
+           require('postcss-flexboxfixer')
         ]
       },
       style: {
